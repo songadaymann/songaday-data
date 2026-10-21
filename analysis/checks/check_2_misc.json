@@ -1,0 +1,35 @@
+{
+ "all three swapped": {
+  "season_mood": {
+   "p": 0.0762,
+   "q": 0.2155909090909091
+  },
+  "era_mood": {
+   "p": 0.6852,
+   "q": 0.8636161616161616
+  },
+  "news_politics_topic": {
+   "p": 0.011788486497265356,
+   "q": 0.050405942264169105
+  }
+ },
+ "only news_politics_topic swapped": {
+  "season_mood": {
+   "p": 0.0124,
+   "q": 0.0496
+  },
+  "era_mood": {
+   "p": 0.0014,
+   "q": 0.0075478260869565215
+  },
+  "news_politics_topic": {
+   "p": 0.011788486497265356,
+   "q": 0.0487257441886968
+  }
+ },
+ "weekday_beyond_weekend": {
+  "mon_fri_pF": 0.5814347934775103,
+  "sat_vs_sun_pF": 0.10826038769112845,
+  "weekend_vs_weekday_pF": 1.4531278802019908e-11
+ }
+}

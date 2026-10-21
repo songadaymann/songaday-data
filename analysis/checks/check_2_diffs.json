@@ -1,0 +1,322 @@
+[
+ {
+  "id": "weekend_wild",
+  "rows": [
+   {
+    "method": "A  year+month+home_era FE, cl. year-month",
+    "estimate": -10.359716956466471,
+    "ci_low": -12.957031553082965,
+    "ci_high": -7.762402359849976,
+    "p": 1.85854823617156e-13,
+    "n": 6502,
+    "clusters": 214,
+    "unit": "pts"
+   },
+   {
+    "method": "B  calendar-week FE (weekend vs its own week), cl. ym",
+    "estimate": -10.363949606977558,
+    "ci_low": -13.212313153772609,
+    "ci_high": -7.515586060182507,
+    "p": 1.2001942322201493e-11,
+    "n": 6502,
+    "clusters": 214,
+    "unit": "pts"
+   },
+   {
+    "method": "C  A's FE, clustered by year",
+    "estimate": -10.359716956466471,
+    "ci_low": -13.21139079721972,
+    "ci_high": -7.508043115713223,
+    "p": 6.506273976381181e-07,
+    "n": 6502,
+    "clusters": 18,
+    "unit": "pts"
+   },
+   {
+    "method": "boot  years resampled, refit A",
+    "estimate": -10.359716956466471,
+    "ci_low": -12.930816149949894,
+    "ci_high": -7.836201058223057,
+    "p": 0.0005,
+    "n": 6502,
+    "clusters": 18,
+    "unit": "pts"
+   },
+   {
+    "method": "   at home only, week FE",
+    "estimate": -9.644320151252463,
+    "ci_low": -13.159786031797987,
+    "ci_high": -6.128854270706937,
+    "p": 1.745100487949114e-07,
+    "n": 5174,
+    "clusters": 208,
+    "unit": "pts"
+   },
+   {
+    "method": "   2009-2017 only, week FE",
+    "estimate": -7.5686608473493555,
+    "ci_low": -11.964631391019273,
+    "ci_high": -3.1726903036794374,
+    "p": 0.0009078221877332043,
+    "n": 3287,
+    "clusters": 108,
+    "unit": "pts"
+   },
+   {
+    "method": "   2018-2026 only, week FE",
+    "estimate": -13.224400871459691,
+    "ci_low": -16.805418801633916,
+    "ci_high": -9.643382941285465,
+    "p": 5.155531794104785e-11,
+    "n": 3215,
+    "clusters": 106,
+    "unit": "pts"
+   }
+  ],
+  "orig": -10.35097673208249
+ },
+ {
+  "id": "travel_length",
+  "rows": [
+   {
+    "method": "A  year+month+home_era FE, cl. year-month",
+    "estimate": 17.290349277225065,
+    "ci_low": 11.410525693628248,
+    "ci_high": 23.170172860821882,
+    "p": 2.4180862860786187e-08,
+    "n": 6500,
+    "clusters": 214,
+    "unit": "s"
+   },
+   {
+    "method": "B  year-month FE, cl. year-month",
+    "estimate": 20.943136081036243,
+    "ci_low": 14.806928177945103,
+    "ci_high": 27.079343984127384,
+    "p": 1.5647438906978512e-10,
+    "n": 6500,
+    "clusters": 214,
+    "unit": "s"
+   },
+   {
+    "method": "C  A's FE, clustered by year",
+    "estimate": 17.290349277225065,
+    "ci_low": 9.608719319996672,
+    "ci_high": 24.971979234453457,
+    "p": 0.00018589565245192487,
+    "n": 6500,
+    "clusters": 18,
+    "unit": "s"
+   },
+   {
+    "method": "boot  years resampled, refit A",
+    "estimate": 17.290349277225065,
+    "ci_low": 10.285034154708674,
+    "ci_high": 24.192082136662822,
+    "p": 0.0005,
+    "n": 6500,
+    "clusters": 18,
+    "unit": "s"
+   },
+   {
+    "method": "   log2 length (x100 = % per doubling), ym FE",
+    "estimate": 15.385765610622414,
+    "ci_low": 10.564577950453469,
+    "ci_high": 20.417181997617263,
+    "p": 3.0478584449915826e-10,
+    "n": 6500,
+    "clusters": 214,
+    "unit": "%"
+   },
+   {
+    "method": "   unclipped length, ym FE",
+    "estimate": 21.612133959354303,
+    "ci_low": 15.259810284518831,
+    "ci_high": 27.964457634189774,
+    "p": 1.7651367292163362e-10,
+    "n": 6500,
+    "clusters": 214,
+    "unit": "s"
+   }
+  ],
+  "orig": 17.336908574507213
+ },
+ {
+  "id": "travel_views",
+  "rows": [
+   {
+    "method": "A  ym FE, cl. year-month",
+    "estimate": -27.668610898017278,
+    "ci_low": -33.70579697451508,
+    "ci_high": -21.081638957011116,
+    "p": 4.888680251266195e-12,
+    "n": 6451,
+    "clusters": 213,
+    "unit": "%"
+   },
+   {
+    "method": "B  year-month + weekday FE, cl. year-month",
+    "estimate": -26.60005467022598,
+    "ci_low": -32.66996255665874,
+    "ci_high": -19.982935120933497,
+    "p": 2.3100249241207962e-11,
+    "n": 6451,
+    "clusters": 213,
+    "unit": "%"
+   },
+   {
+    "method": "C  A's FE, clustered by year",
+    "estimate": -27.668610898017278,
+    "ci_low": -36.223369409217256,
+    "ci_high": -17.966349100628886,
+    "p": 4.508996133421552e-05,
+    "n": 6451,
+    "clusters": 18,
+    "unit": "%"
+   },
+   {
+    "method": "boot  years resampled, refit A",
+    "estimate": -27.668610898017278,
+    "ci_low": -35.96220464190054,
+    "ci_high": -19.95919224652637,
+    "p": 0.0005,
+    "n": 6451,
+    "clusters": 18,
+    "unit": "%"
+   }
+  ],
+  "orig": -27.668610898017086
+ },
+ {
+  "id": "news_song_views",
+  "rows": [
+   {
+    "method": "A  ym FE, cl. year-month",
+    "estimate": 124.04073441210701,
+    "ci_low": 85.39516022262028,
+    "ci_high": 170.74196875281754,
+    "p": 6.494658007264967e-15,
+    "n": 6451,
+    "clusters": 213,
+    "unit": "%"
+   },
+   {
+    "method": "B  year-month + weekday FE, cl. year-month",
+    "estimate": 119.9212313105714,
+    "ci_low": 82.23846349018959,
+    "ci_high": 165.3959381289532,
+    "p": 1.5116498531329168e-14,
+    "n": 6451,
+    "clusters": 213,
+    "unit": "%"
+   },
+   {
+    "method": "C  A's FE, clustered by year",
+    "estimate": 124.04073441210701,
+    "ci_low": 79.22469121323847,
+    "ci_high": 180.06325655317218,
+    "p": 6.968239576125183e-07,
+    "n": 6451,
+    "clusters": 18,
+    "unit": "%"
+   },
+   {
+    "method": "boot  years resampled, refit A",
+    "estimate": 124.04073441210701,
+    "ci_low": 85.96237458073578,
+    "ci_high": 175.12731150166982,
+    "p": 0.0005,
+    "n": 6451,
+    "clusters": 18,
+    "unit": "%"
+   },
+   {
+    "method": "   only songs with proper nouns or a description",
+    "estimate": 75.88451283445356,
+    "ci_low": 39.18638789981186,
+    "ci_high": 122.25852916939499,
+    "p": 3.6479964130008547e-06,
+    "n": 2800,
+    "clusters": 212,
+    "unit": "%"
+   },
+   {
+    "method": "   only songs before #4749 (no descriptions)",
+    "estimate": 135.19673924801188,
+    "ci_low": 86.76240774920556,
+    "ci_high": 196.19186655154158,
+    "p": 1.2129249872497858e-11,
+    "n": 4731,
+    "clusters": 156,
+    "unit": "%"
+   }
+  ],
+  "orig": 124.04073441210662
+ },
+ {
+  "id": "news_politics_topic",
+  "rows": [
+   {
+    "method": "A  year+month FE, cl. year-month",
+    "estimate": 1.7490352204288995,
+    "ci_low": 0.3572663720348878,
+    "ci_high": 3.140804068822911,
+    "p": 0.014021412874548932,
+    "n": 6502,
+    "clusters": 214,
+    "unit": "pts/3"
+   },
+   {
+    "method": "B  year-month FE (as analyze.py), cl. year-month",
+    "estimate": 1.7976492196530418,
+    "ci_low": 0.40274749548301503,
+    "ci_high": 3.1925509438230684,
+    "p": 0.011788486497265356,
+    "n": 6502,
+    "clusters": 214,
+    "unit": "pts/3"
+   },
+   {
+    "method": "C  A's FE, clustered by year",
+    "estimate": 1.7490352204288995,
+    "ci_low": 0.37081790485364613,
+    "ci_high": 3.127252536004153,
+    "p": 0.015904895051211978,
+    "n": 6502,
+    "clusters": 18,
+    "unit": "pts/3"
+   },
+   {
+    "method": "boot  years resampled, refit A",
+    "estimate": 1.7490352204288995,
+    "ci_low": 0.6298939101333184,
+    "ci_high": 3.114344509244231,
+    "p": 0.0005,
+    "n": 6502,
+    "clusters": 18,
+    "unit": "pts/3"
+   },
+   {
+    "method": "   ym FE, dropping +-3 days of US elections",
+    "estimate": 1.483983173252495,
+    "ci_low": 0.08967741821218267,
+    "ci_high": 2.878288928292807,
+    "p": 0.03708921179182606,
+    "n": 6446,
+    "clusters": 214,
+    "unit": "pts/3"
+   },
+   {
+    "method": "   ym FE, dropping every November",
+    "estimate": 1.6026471368199589,
+    "ci_low": 0.16775814940633216,
+    "ci_high": 3.0375361242335854,
+    "p": 0.02878091138885284,
+    "n": 5992,
+    "clusters": 197,
+    "unit": "pts/3"
+   }
+  ],
+  "orig": 1.7976492196530485
+ }
+]

@@ -1,0 +1,225 @@
+{
+ "analytic": [
+  {
+   "id": "moon_full_wild",
+   "verdict": "fun null",
+   "null_sd": 0.0338255,
+   "mde80_alpha05": 9.47114,
+   "mde80_alpha005": 12.3463075,
+   "unit": "pts",
+   "baseline": 0.415314
+  },
+  {
+   "id": "moon_full_minor",
+   "verdict": "fun null",
+   "null_sd": 0.0284867,
+   "mde80_alpha05": 7.976276,
+   "mde80_alpha005": 10.3976455,
+   "unit": "pts",
+   "baseline": 0.206696
+  },
+  {
+   "id": "moon_full_tempo",
+   "verdict": "fun null",
+   "null_sd": 1.6179,
+   "mde80_alpha05": 4.530119999999999,
+   "mde80_alpha005": 5.905334999999999,
+   "unit": "bpm",
+   "baseline": 105.828
+  },
+  {
+   "id": "moon_full_length",
+   "verdict": "fun null",
+   "null_sd": 4.50716,
+   "mde80_alpha05": 12.620047999999999,
+   "mde80_alpha005": 16.451134,
+   "unit": "s",
+   "baseline": 140.389
+  },
+  {
+   "id": "supermoon_wild",
+   "verdict": "fun null",
+   "null_sd": 0.0608884,
+   "mde80_alpha05": 17.048752,
+   "mde80_alpha005": 22.224266,
+   "unit": "pts",
+   "baseline": 0.415358
+  },
+  {
+   "id": "eclipse_dark",
+   "verdict": "fun null",
+   "null_sd": 0.0424267,
+   "mde80_alpha05": 11.879475999999999,
+   "mde80_alpha005": 15.485745499999998,
+   "unit": "pts",
+   "baseline": 0.171469
+  },
+  {
+   "id": "mercury_minor",
+   "verdict": "fun null",
+   "null_sd": 0.0122138,
+   "mde80_alpha05": 3.4198639999999996,
+   "mde80_alpha005": 4.458037,
+   "unit": "pts",
+   "baseline": 0.207674
+  },
+  {
+   "id": "mercury_chaos",
+   "verdict": "fun null",
+   "null_sd": 0.00707475,
+   "mde80_alpha05": 1.9809299999999999,
+   "mde80_alpha005": 2.58228375,
+   "unit": "pts",
+   "baseline": 0.104583
+  },
+  {
+   "id": "mercury_views",
+   "verdict": "fun null",
+   "null_sd": 0.0278273,
+   "mde80_alpha05": 19.651029577947664,
+   "mde80_alpha005": 26.348370428009417,
+   "unit": "% views",
+   "baseline": 2.74606
+  },
+  {
+   "id": "arc_wild",
+   "verdict": "fun null",
+   "null_sd": 0.000319256,
+   "mde80_alpha05": 2.6817504,
+   "mde80_alpha005": 3.4958532000000004,
+   "unit": "pts",
+   "baseline": null
+  },
+  {
+   "id": "arc_tempo",
+   "verdict": "confounded",
+   "null_sd": 0.0168476,
+   "mde80_alpha05": 1.4151984,
+   "mde80_alpha005": 1.8448122,
+   "unit": "bpm",
+   "baseline": null
+  },
+  {
+   "id": "conj_tempo",
+   "verdict": "fun null",
+   "null_sd": 0.435746,
+   "mde80_alpha05": 1.2200888,
+   "mde80_alpha005": 1.5904729,
+   "unit": "bpm",
+   "baseline": null
+  },
+  {
+   "id": "retro_count_dark",
+   "verdict": "fun null",
+   "null_sd": 0.0108356,
+   "mde80_alpha05": 3.033968,
+   "mde80_alpha005": 3.9549939999999997,
+   "unit": "pts",
+   "baseline": null
+  },
+  {
+   "id": "friday13_dark",
+   "verdict": "fun null",
+   "null_sd": 0.0658038,
+   "mde80_alpha05": 18.425063999999995,
+   "mde80_alpha005": 24.018386999999997,
+   "unit": "pts",
+   "baseline": 0.170788
+  },
+  {
+   "id": "monday_tired",
+   "verdict": "fun null",
+   "null_sd": 0.0123242,
+   "mde80_alpha05": 3.450776,
+   "mde80_alpha005": 4.498333000000001,
+   "unit": "pts",
+   "baseline": 0.142652
+  }
+ ],
+ "simulated": {
+  "moon_full_wild": [
+   {
+    "delta_points": 0,
+    "power_05": 0.03,
+    "power_005": 0.005,
+    "mean_estimate_points": -0.2152597744895759,
+    "sd_estimate_points": 3.4215932178900363,
+    "sims": 200
+   },
+   {
+    "delta_points": 4.0,
+    "power_05": 0.2,
+    "power_005": 0.055,
+    "mean_estimate_points": 3.7359147024195494,
+    "sd_estimate_points": 3.7741151261124233,
+    "sims": 200
+   },
+   {
+    "delta_points": 7.000000000000001,
+    "power_05": 0.515,
+    "power_005": 0.185,
+    "mean_estimate_points": 6.92369114353982,
+    "sd_estimate_points": 3.8631591191137287,
+    "sims": 200
+   },
+   {
+    "delta_points": 10.0,
+    "power_05": 0.785,
+    "power_005": 0.47,
+    "mean_estimate_points": 9.78973026125174,
+    "sd_estimate_points": 3.5303668831754202,
+    "sims": 200
+   },
+   {
+    "delta_points": 13.0,
+    "power_05": 0.905,
+    "power_005": 0.695,
+    "mean_estimate_points": 12.576097965983593,
+    "sd_estimate_points": 4.332726331916272,
+    "sims": 200
+   }
+  ],
+  "mercury_chaos": [
+   {
+    "delta_points": 0,
+    "power_05": 0.07,
+    "power_005": 0.0,
+    "mean_estimate_points": 0.03269231558463454,
+    "sd_estimate_points": 0.7275868747660827,
+    "sims": 200
+   },
+   {
+    "delta_points": 1.0,
+    "power_05": 0.27,
+    "power_005": 0.02,
+    "mean_estimate_points": 1.058734199738757,
+    "sd_estimate_points": 0.7352930069200407,
+    "sims": 200
+   },
+   {
+    "delta_points": 2.0,
+    "power_05": 0.585,
+    "power_005": 0.155,
+    "mean_estimate_points": 1.929496193330025,
+    "sd_estimate_points": 0.7744903863970624,
+    "sims": 200
+   },
+   {
+    "delta_points": 3.0,
+    "power_05": 0.895,
+    "power_005": 0.39,
+    "mean_estimate_points": 3.0869827355632076,
+    "sd_estimate_points": 0.8884978475283875,
+    "sims": 200
+   },
+   {
+    "delta_points": 4.0,
+    "power_05": 0.975,
+    "power_005": 0.52,
+    "mean_estimate_points": 3.9834821825132907,
+    "sd_estimate_points": 0.9534525485932452,
+    "sims": 200
+   }
+  ]
+ }
+}

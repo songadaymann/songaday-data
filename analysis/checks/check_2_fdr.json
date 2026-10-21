@@ -1,0 +1,155 @@
+[
+ {
+  "id": "season_mood",
+  "verdict": "probably real",
+  "p": 0.0124,
+  "q_published": 0.0496,
+  "q_findings_only": 0.04887058823529412,
+  "q_BY": 0.2679155938176698,
+  "holm": 0.6324
+ },
+ {
+  "id": "weekend_wild",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "weekday_mood",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "weekday_views",
+  "verdict": "confounded",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "travel_mood",
+  "verdict": "probably real",
+  "p": 0.0062,
+  "q_published": 0.028474074074074072,
+  "q_findings_only": 0.0259625,
+  "q_BY": 0.15380339645088448,
+  "holm": 0.32239999999999996
+ },
+ {
+  "id": "travel_length",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "travel_views",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "era_mood",
+  "verdict": "real",
+  "p": 0.0014,
+  "q_published": 0.0075478260869565215,
+  "q_findings_only": 0.006699999999999999,
+  "q_BY": 0.04076976427660192,
+  "holm": 0.0756
+ },
+ {
+  "id": "beard_mood",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "beard_views",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "news_politics_topic",
+  "verdict": "probably real",
+  "p": 0.0048,
+  "q_published": 0.02289230769230769,
+  "q_findings_only": 0.02144,
+  "q_BY": 0.12365335099277065,
+  "holm": 0.25439999999999996
+ },
+ {
+  "id": "news_song_views",
+  "verdict": "real",
+  "p": 0.0002,
+  "q_published": 0.0016533333333333335,
+  "q_findings_only": 0.0011166666666666666,
+  "q_BY": 0.008930519793922327,
+  "holm": 0.0126
+ },
+ {
+  "id": "trend_dark",
+  "verdict": "real",
+  "p": 0.000646805,
+  "q_published": 0.0036456281818181818,
+  "q_findings_only": 0.0033335334615384616,
+  "q_BY": 0.019691948370367942,
+  "holm": 0.035574274999999995
+ },
+ {
+  "id": "views_topic",
+  "verdict": "real",
+  "p": 2.10536e-91,
+  "q_published": 2.6106464e-89,
+  "q_findings_only": 1.4105912e-89,
+  "q_BY": 1.410146936499923e-88,
+  "holm": 1.4105912e-89
+ },
+ {
+  "id": "views_mood",
+  "verdict": "real",
+  "p": 8.3632e-35,
+  "q_published": 5.185184e-33,
+  "q_findings_only": 2.801672e-33,
+  "q_BY": 2.80078961776992e-32,
+  "holm": 5.519712e-33
+ },
+ {
+  "id": "views_length",
+  "verdict": "real",
+  "p": 3.07983e-28,
+  "q_published": 1.2729964e-26,
+  "q_findings_only": 6.878287e-27,
+  "q_BY": 6.876120694228949e-26,
+  "holm": 2.0018895e-26
+ },
+ {
+  "id": "views_genre",
+  "verdict": "real",
+  "p": 2.56702e-07,
+  "q_published": 6.366209600000001e-06,
+  "q_findings_only": 4.2997585000000006e-06,
+  "q_BY": 3.438723438209174e-05,
+  "holm": 1.6428928e-05
+ }
+]

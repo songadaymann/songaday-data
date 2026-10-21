@@ -1,0 +1,103 @@
+[
+ {
+  "label": "dark share, all years (as published)",
+  "n_years": 18,
+  "slope_per_decade_pts": 8.441192430498234,
+  "ols_p": 0.0006333575915140186,
+  "kendall_tau": 0.5686274509803922,
+  "kendall_p": 0.0006468049116659813,
+  "theil_sen_pts": 8.220616636157335,
+  "theil_sen_ci": [
+   3.423053479195407,
+   13.661202185792352
+  ],
+  "resid_lag1_r": 0.12195681511172063,
+  "n_eff": 14.086796492621904,
+  "ar1_adjusted_p": 0.0031180466069826514,
+  "newey_west_p": 0.0005327532121347616,
+  "random_walk_mean_change_pts": 0.43524296436046017,
+  "random_walk_p": 0.7559914123365655
+ },
+ {
+  "label": "dark share, 2009-2025 (2026 is partial)",
+  "n_years": 17,
+  "slope_per_decade_pts": 9.503819118784575,
+  "ols_p": 0.00046735817304816523,
+  "kendall_tau": 0.588235294117647,
+  "kendall_p": 0.0006285132262410544,
+  "theil_sen_pts": 9.513674812349864,
+  "theil_sen_ci": [
+   3.4658282805599208,
+   15.129738889002308
+  ],
+  "resid_lag1_r": 0.01402727580211117,
+  "n_eff": 16.52967007036914,
+  "ar1_adjusted_p": 0.0005778727687042742,
+  "newey_west_p": 8.610907078077656e-05,
+  "random_walk_mean_change_pts": 0.4623287671232877,
+  "random_walk_p": 0.7567348964731606
+ },
+ {
+  "label": "song-level OLS, cluster by year",
+  "slope_per_decade_pts": 8.604297217647522,
+  "se": 1.8432769860187406,
+  "p": 0.0002207337576887436
+ },
+ {
+  "label": "Sad only",
+  "n_years": 18,
+  "slope_per_decade_pts": 0.4105263978913837,
+  "ols_p": 0.7215288779395741,
+  "kendall_tau": 0.05245929835764225,
+  "kendall_p": 0.7617075639478075,
+  "theil_sen_pts": 0.22831050228310523,
+  "theil_sen_ci": [
+   -1.9038351173990091,
+   2.9680365296803646
+  ],
+  "resid_lag1_r": 0.37336758855634333,
+  "n_eff": 8.212938400448554,
+  "ar1_adjusted_p": 0.8284132127570699,
+  "newey_west_p": 0.7484991434932732,
+  "random_walk_mean_change_pts": -0.13030337199165054,
+  "random_walk_p": 0.8470661193012101
+ },
+ {
+  "label": "dark without Angry and Anxious",
+  "n_years": 18,
+  "slope_per_decade_pts": 1.6690529992858245,
+  "ols_p": 0.18283395940379535,
+  "kendall_tau": 0.2039517822452645,
+  "kendall_p": 0.2396360279254658,
+  "theil_sen_pts": 1.8631072046378987,
+  "theil_sen_ci": [
+   -1.0273972602739727,
+   4.109589041095887
+  ],
+  "resid_lag1_r": 0.4175038802861591,
+  "n_eff": 7.396755875357808,
+  "ar1_adjusted_p": 0.4528498734862755,
+  "newey_west_p": 0.2463101252395731,
+  "random_walk_mean_change_pts": 0.030306947221358946,
+  "random_walk_p": 0.9648992965969959
+ },
+ {
+  "label": "Angry or Anxious",
+  "n_years": 18,
+  "slope_per_decade_pts": 6.77213943121241,
+  "ols_p": 0.00041360099071280587,
+  "kendall_tau": 0.607843137254902,
+  "kendall_p": 0.00022573646929059787,
+  "theil_sen_pts": 6.392694063926941,
+  "theil_sen_ci": [
+   4.109589041095891,
+   9.355918428453796
+  ],
+  "resid_lag1_r": 0.02028346153919324,
+  "n_eff": 17.284312014320637,
+  "ar1_adjusted_p": 0.0005626120217393449,
+  "newey_west_p": 0.0002646848986188562,
+  "random_walk_mean_change_pts": 0.40493601713910127,
+  "random_walk_p": 0.7158375883780305
+ }
+]

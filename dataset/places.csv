@@ -1,0 +1,161 @@
+location_raw,place,city,region,country,lat,lon,kind,confidence,note,songs,first_date,last_date
+Los Angeles,"Los Angeles, CA",Los Angeles,California,United States,34.05223,-118.24368,travel,high,"includes the first five songs (Jan 1-5, 2009), before the move to Berkeley",99,2009-01-01,2026-07-29
+NYC,"New York, NY",New York,New York,United States,40.71427,-74.00597,travel,high,"he lived in Brooklyn from 2012 to 2014, so some of these are his home city",79,2009-01-06,2023-04-20
+Baltimore,"Baltimore, MD",Baltimore,Maryland,United States,39.29038,-76.61219,travel,high,,3,2009-01-18,2009-01-20
+"Southington, CT","Southington, CT",Southington,Connecticut,United States,41.59649,-72.8776,travel,high,,16,2009-01-24,2011-07-03
+"Jupiter, FL","Jupiter, FL",Jupiter,Florida,United States,26.93422,-80.09421,travel,high,,22,2009-01-25,2010-03-19
+Berkeley,"Berkeley, CA",Berkeley,California,United States,37.87159,-122.27275,home,high,"home Feb 2009 to Nov 2011; one later visit (#2138, 2014)",602,2009-02-08,2014-11-08
+Oakland,"Oakland, CA",Oakland,California,United States,37.80437,-122.2708,travel,high,"Oakland, CA: all six songs are from the Berkeley years (not Oakland, MD)",6,2009-02-19,2011-03-17
+Vienna,"Vienna, Austria",Vienna,State of Vienna,Austria,48.20849,16.37208,travel,high,"Vienna, Austria, not Vienna, VA: #131-132 are about flying over the Atlantic to Vienna, #133 is 'Springtime in Vienna' (Austria) and #139 is about the University of Vienna's botanical gardens",15,2009-05-11,2009-05-25
+Vermont,Vermont,,Vermont,United States,44.26006,-72.57539,travel,low,"state only (Aug 2009); coordinates are Montpelier, the capital",9,2009-08-16,2009-08-24
+"Pensacola,FL","Pensacola, FL",Pensacola,Florida,United States,30.42131,-87.21691,travel,high,,2,2010-05-01,2010-05-02
+"Maui, HI","Maui, HI",,Hawaii,United States,20.88933,-156.47293,travel,medium,"island only; coordinates are Kahului, the main town, and weather varies a lot across Maui",42,2010-07-02,2013-06-27
+"Portland, OR","Portland, OR",Portland,Oregon,United States,45.52345,-122.67621,travel,high,,9,2010-09-01,2015-09-13
+"Seattle, WA","Seattle, WA",Seattle,Washington,United States,47.60621,-122.33207,travel,high,,3,2010-09-02,2019-01-13
+"Bennington, VT","Bennington, VT",Bennington,Vermont,United States,42.87813,-73.19677,travel,high,,11,2010-10-01,2025-10-05
+Berkeley Studio,"Berkeley, CA",Berkeley,California,United States,37.87159,-122.27275,studio,high,,195,2010-10-16,2011-09-28
+San Diego,"San Diego, CA",San Diego,California,United States,32.71571,-117.16472,travel,high,,8,2010-10-26,2012-04-12
+San Francisco,"San Francisco, CA",San Francisco,California,United States,37.77493,-122.41942,travel,high,,25,2010-11-26,2019-10-30
+New Zealand,"Berkeley, CA",Berkeley,California,United States,37.87159,-122.27275,unknown,low,"#748 is a song about someone in New Zealand, and #747 and #749 are both Berkeley Studio, so it was almost certainly made in Berkeley; the sheet probably has the subject, not the place. Not a fixed place, its one song resolves to Berkeley, CA",1,2011-01-18,2011-01-18
+Norman's House,"Berkeley, CA",Berkeley,California,United States,37.87159,-122.27275,unknown,low,"a friend's house during the Berkeley years; Berkeley Studio and Berkeley songs on either side. Not a fixed place, all 33 songs resolve to Berkeley, CA",33,2011-01-28,2011-06-30
+Santa Cruz,"Santa Cruz, CA",Santa Cruz,California,United States,36.97412,-122.0308,travel,high,,4,2011-05-14,2011-07-19
+"Canton, CT","Canton, CT",Canton,Connecticut,United States,41.82454,-72.89371,travel,high,"family; his base from Nov 2011 to Feb 2012, between Berkeley and Brooklyn",78,2011-07-02,2012-04-19
+Brooklyn,"Brooklyn, NY",Brooklyn,New York,United States,40.6501,-73.94958,travel,high,"only 4 of the 10 songs are from while he lived in Brooklyn (2012); the rest are visits (2011, 2015, 2019)",10,2011-10-06,2019-05-18
+In The Car,,,,,,,unknown,low,"in a car; each song takes the place of the nearest song with a real place. Not a fixed place, resolves per song: Hartford, CT x6, Brooklyn, NY x2, Berkeley, CA x1, Canton, CT x1, New York, NY x1, Avon, CT x1, Jersey City, NJ x1, West Hartford, CT x1",14,2011-11-07,2026-09-26
+"Tuscon, AC","Tucson, AZ",Tucson,Arizona,United States,32.22174,-110.92648,travel,high,"typo for Tucson, AZ; cross-country drive",1,2011-11-09,2011-11-09
+Utah,"Patagonia, AZ",Patagonia,Arizona,United States,31.53954,-110.7562,travel,low,"the sheet says Utah, but #1043 is Tucson and #1045 is Ozona, TX on the same cross-country drive, and Utah is far off that route. The song mentions ending up in Patagonia, which fits Patagonia, AZ, an hour south of Tucson. Needs a check",1,2011-11-10,2011-11-10
+"Ozona, TX","Ozona, TX",Ozona,Texas,United States,30.71017,-101.20067,travel,high,,1,2011-11-11,2011-11-11
+"Austin, TX","Austin, TX",Austin,Texas,United States,30.26715,-97.74306,travel,high,,5,2011-11-12,2017-06-29
+New Orleans,"New Orleans, LA",New Orleans,Louisiana,United States,29.95465,-90.07507,travel,high,,13,2011-11-13,2019-10-29
+"Bristol, VA","Bristol, VA",Bristol,Virginia,United States,36.59649,-82.18847,travel,high,,1,2011-11-15,2011-11-15
+"Charlottesville, VA","Charlottesville, VA",Charlottesville,Virginia,United States,38.02931,-78.47668,travel,high,,3,2011-11-16,2011-11-18
+"Phuket, Thailand","Phuket, Thailand",Phuket,Phuket,Thailand,7.89059,98.3981,travel,high,,2,2012-01-10,2012-02-02
+Pennsylvania,Pennsylvania,,Pennsylvania,United States,40.2737,-76.88442,travel,low,"state only; coordinates are Harrisburg, the capital. Mostly the yearly Go For Pro gaming weekend (2012-2016) and one healthcare conference (#3044, 2017)",16,2012-02-17,2017-05-02
+Brooklyn Studio,"Brooklyn, NY",Brooklyn,New York,United States,40.6501,-73.94958,studio,high,neighborhood not given,308,2012-03-06,2014-07-08
+Hospital,,,,,,,unknown,low,"a hospital, Mar 2012; Brooklyn Studio and NYC songs on either side. Not a fixed place, resolves per song: Brooklyn, NY x2, New York, NY x1",3,2012-03-10,2012-03-12
+Chicago,"Chicago, IL",Chicago,Illinois,United States,41.85003,-87.65005,travel,high,,2,2012-04-03,2012-04-04
+"Avon, CT","Avon, CT",Avon,Connecticut,United States,41.80982,-72.83065,travel,high,family,309,2012-04-20,2023-01-07
+"Barkhamsted, CT","Barkhamsted, CT",Barkhamsted,Connecticut,United States,41.92926,-72.91399,travel,high,,4,2012-05-05,2023-05-28
+Williamsburg,"Williamsburg, Brooklyn, NY",Brooklyn,New York,United States,40.71427,-73.95347,home,high,Brooklyn neighborhood,72,2012-05-30,2012-12-28
+"Ojai, CA","Ojai, CA",Ojai,California,United States,34.44805,-119.24289,travel,high,,2,2012-06-02,2012-06-03
+"Wilmington, DE","Wilmington, DE",Wilmington,Delaware,United States,39.74595,-75.54659,travel,high,,7,2012-06-11,2018-12-22
+The Garden Center,"Wilmington, DE",Wilmington,Delaware,United States,39.74595,-75.54659,travel,low,"unnamed garden center; three of its six songs come straight after Wilmington, DE songs, and #1259 is 'Raining in Delaware'",6,2012-06-12,2014-07-02
+"Ludlow, MA","Ludlow, MA",Ludlow,Massachusetts,United States,42.16009,-72.47592,travel,high,,1,2012-12-08,2012-12-08
+Bushwick,"Bushwick, Brooklyn, NY",Brooklyn,New York,United States,40.69427,-73.91875,home,high,Brooklyn neighborhood,87,2012-12-30,2013-11-10
+London,"London, UK",London,England,United Kingdom,51.50853,-0.12574,travel,high,"London, England: Healthbox London, 'Platform Nine and Three-Quarters', a red-eye to London",12,2013-01-16,2018-05-05
+"Harrison, NY","Harrison, NY",Harrison,New York,United States,40.96899,-73.71263,travel,high,Westchester County,1,2013-01-30,2013-01-30
+Park Slope,"Park Slope, Brooklyn, NY",Brooklyn,New York,United States,40.6701,-73.98597,home,high,Brooklyn neighborhood,11,2013-02-02,2013-06-09
+Severna Park,"Severna Park, MD",Severna Park,Maryland,United States,39.07039,-76.54524,travel,high,family,123,2013-05-25,2023-06-23
+Montreal,"Montreal, QC",Montreal,Quebec,Canada,45.50884,-73.58781,travel,high,,2,2013-06-15,2013-06-16
+Denver,"Denver, CO",Denver,Colorado,United States,39.73915,-104.9847,travel,high,,25,2013-07-30,2026-02-21
+Minnesota,Minnesota,,Minnesota,United States,44.94441,-93.09327,travel,low,"state only (one song, Oct 2013); coordinates are Saint Paul, the capital",1,2013-10-26,2013-10-26
+Windsor Terrace,"Windsor Terrace, Brooklyn, NY",Brooklyn,New York,United States,40.65391,-73.97575,home,high,Brooklyn neighborhood,141,2013-11-14,2014-12-17
+Windsor Terrace Studio,"Windsor Terrace, Brooklyn, NY",Brooklyn,New York,United States,40.65391,-73.97575,studio,high,,166,2013-11-16,2015-01-03
+"Burlington, VT","Burlington, VT",Burlington,Vermont,United States,44.47588,-73.21207,travel,high,,5,2014-03-13,2024-10-21
+Ronen's Brooklyn Studio,"Brooklyn, NY",Brooklyn,New York,United States,40.6501,-73.94958,studio,high,neighborhood not given,4,2014-04-09,2014-06-24
+Dan Romer's Studio,"Brooklyn, NY",Brooklyn,New York,United States,40.6501,-73.94958,studio,low,"assumed to be in Brooklyn, where producer Dan Romer works; the sheet doesn't say",3,2014-06-12,2014-07-17
+"Williams, MA","Williamstown, MA",Williamstown,Massachusetts,United States,42.71202,-73.20372,travel,medium,"no town is called Williams, MA; read as Williamstown (Williams College)",2,2014-06-20,2014-06-21
+"Manitou Springs, CO","Manitou Springs, CO",Manitou Springs,Colorado,United States,38.85971,-104.9172,travel,high,,8,2014-07-20,2017-07-14
+"Colorado Springs, CO","Colorado Springs, CO",Colorado Springs,Colorado,United States,38.83388,-104.82136,travel,high,,4,2014-07-23,2017-07-09
+"Pueblo, CO","Pueblo, CO",Pueblo,Colorado,United States,38.25445,-104.60914,travel,high,,3,2014-07-25,2017-07-07
+Croton On Hudson,"Croton-on-Hudson, NY",Croton-on-Hudson,New York,United States,41.20843,-73.89125,travel,high,,1,2014-09-06,2014-09-06
+Brooklyn navy Yard,"Brooklyn Navy Yard, Brooklyn, NY",Brooklyn,New York,United States,40.701,-73.97,home,high,fixed: not in the geocoder,1,2014-10-10,2014-10-10
+"Stanford, CA","Stanford, CA",Stanford,California,United States,37.42411,-122.16608,travel,high,,8,2014-11-09,2016-07-19
+Jersey City,"Jersey City, NJ",Jersey City,New Jersey,United States,40.72816,-74.07764,home,high,,789,2014-12-20,2019-08-03
+Jersey City Studio,"Jersey City, NJ",Jersey City,New Jersey,United States,40.72816,-74.07764,studio,high,,283,2015-01-04,2017-10-03
+Salt Lake City,"Salt Lake City, UT",Salt Lake City,Utah,United States,40.76078,-111.89105,travel,high,,2,2015-01-26,2015-01-27
+Berlin,"Berlin, Germany",Berlin,State of Berlin,Germany,52.52437,13.41053,travel,high,,2,2015-03-14,2015-03-21
+"Hanover, Germany","Hanover, Germany",Hanover,Lower Saxony,Germany,52.37052,9.73322,travel,high,Hannover,5,2015-03-15,2015-03-20
+Toronto,"Toronto, ON",Toronto,Ontario,Canada,43.70643,-79.39864,travel,high,,7,2015-04-10,2018-09-09
+"Cypress Hill, Brooklyn","Cypress Hills, Brooklyn, NY",Brooklyn,New York,United States,40.67705,-73.89125,travel,high,"Cypress Hills, Brooklyn neighborhood",1,2015-05-08,2015-05-08
+Minneapolis,"Minneapolis, MN",Minneapolis,Minnesota,United States,44.97997,-93.26384,travel,high,,8,2015-05-30,2026-08-20
+"Misquomicut, RI","Misquamicut, RI",Misquamicut,Rhode Island,United States,41.32232,-71.81618,travel,high,"Misquamicut, in Westerly",3,2015-08-30,2015-09-01
+Newark Airport,"Newark, NJ",Newark,New Jersey,United States,40.73566,-74.17237,travel,high,Newark Liberty airport,3,2015-09-09,2017-07-15
+"Simsbury, CT","Simsbury, CT",Simsbury,Connecticut,United States,41.87593,-72.80121,travel,high,,2,2015-10-10,2025-05-08
+"Olivebridge, NY","Olivebridge, NY",Olivebridge,New York,United States,41.92787,-74.21542,travel,high,,9,2015-10-23,2017-10-15
+Vancouver,"Vancouver, BC",Vancouver,British Columbia,Canada,49.24966,-123.11934,travel,medium,"assumed Vancouver, BC rather than Vancouver, WA; the two songs don't say",2,2016-01-11,2016-01-12
+Yosemite,"Yosemite Valley, CA",Yosemite Valley,California,United States,37.74075,-119.57788,travel,medium,the sheet says only Yosemite; Yosemite Valley is where visitors stay,8,2016-03-14,2017-03-23
+"Washington, DC","Washington, DC",Washington D.C.,District of Columbia,United States,38.89511,-77.03637,travel,high,,21,2016-09-08,2023-12-04
+"Chester, NJ","Chester, NJ",Chester,New Jersey,United States,40.78427,-74.69683,travel,high,Morris County,1,2016-10-15,2016-10-15
+Jersey City(Oskar's House),"Jersey City, NJ",Jersey City,New Jersey,United States,40.72816,-74.07764,home,high,a friend's house in Jersey City,2,2017-03-08,2017-04-06
+"Morristown, NJ","Morristown, NJ",Morristown,New Jersey,United States,40.79677,-74.48154,travel,high,,1,2017-04-13,2017-04-13
+"Tillson, NY","Tillson, NY",Tillson,New York,United States,41.82898,-74.06848,travel,high,summer 2017,36,2017-06-22,2017-08-11
+"Tillson, NY Studio","Tillson, NY",Tillson,New York,United States,41.82898,-74.06848,studio,high,,1,2017-06-26,2017-06-26
+Storm King,"Storm King, NY",Mountainville,New York,United States,41.40093,-74.07848,travel,medium,"taken as Storm King Art Center in Mountainville, NY, a short drive from the Tillson songs on either side",1,2017-07-23,2017-07-23
+Jersey City Studio2,"Jersey City, NJ",Jersey City,New Jersey,United States,40.72816,-74.07764,studio,high,,166,2017-08-21,2019-06-18
+"Palmer Rapids, Ontario","Palmer Rapids, ON",Palmer Rapids,Ontario,Canada,45.31682,-77.51619,travel,high,,5,2017-09-09,2018-09-11
+St. Louis,"St. Louis, MO",St Louis,Missouri,United States,38.62727,-90.19789,travel,high,,2,2017-09-27,2017-09-28
+Boston,"Boston, MA",Boston,Massachusetts,United States,42.35843,-71.05977,travel,high,,8,2017-10-23,2019-07-25
+"nashville, TN","Nashville, TN",Nashville,Tennessee,United States,36.16589,-86.78444,travel,high,,6,2018-05-16,2019-03-07
+Hackensack Children's Hospital,"Hackensack, NJ",Hackensack,New Jersey,United States,40.88593,-74.04347,travel,high,the children's hospital at Hackensack University Medical Center,13,2018-06-08,2018-06-26
+"Plano, TX","Plano, TX",Plano,Texas,United States,33.01984,-96.69889,travel,high,,2,2018-07-23,2018-07-24
+Flamig Farm,"West Simsbury, CT",West Simsbury,Connecticut,United States,41.87315,-72.85815,travel,medium,"Flamig Farm is in West Simsbury, CT; Avon songs on either side",4,2018-08-11,2018-08-17
+Stanclift Cove,"Avon, CT",Avon,Connecticut,United States,41.80982,-72.83065,travel,low,"couldn't find a Stanclift Cove; the song is about kayaking 'at sea', so probably the Connecticut or Rhode Island shore. Avon songs on either side. Not a fixed place, its one song resolves to Avon, CT",1,2018-08-19,2018-08-19
+Windsor CT,"Windsor, CT",Windsor,Connecticut,United States,41.8526,-72.6437,travel,high,,1,2018-08-21,2018-08-21
+Atlanta,"Atlanta, GA",Atlanta,Georgia,United States,33.749,-84.38798,travel,high,,2,2018-09-12,2018-09-13
+"East Hanover, NJ","East Hanover, NJ",East Hanover,New Jersey,United States,40.8201,-74.36487,travel,high,,1,2018-10-10,2018-10-10
+In The Air,,,,,,,unknown,low,"on a plane; each song takes the place of the nearest song with a real place (usually where the flight left from). Not a fixed place, resolves per song: San Francisco, CA x1, Burlingame, CA x1",2,2018-10-13,2026-01-27
+Prague,"Prague, Czechia",Prague,Prague,Czechia,50.08804,14.42076,travel,high,,7,2018-10-28,2018-11-04
+"Victoria, BC","Victoria, BC",Victoria,British Columbia,Canada,48.4359,-123.35155,travel,high,,5,2019-01-14,2019-01-18
+Orlando,"Orlando, FL",Orlando,Florida,United States,28.53834,-81.37924,travel,high,,11,2019-02-11,2023-02-02
+"Teaneck, NJ","Teaneck, NJ",Teaneck,New Jersey,United States,40.8976,-74.01597,travel,high,,1,2019-03-02,2019-03-02
+Philly,"Philadelphia, PA",Philadelphia,Pennsylvania,United States,39.95238,-75.16362,travel,high,,1,2019-05-26,2019-05-26
+"Hot Springs, VA","Hot Springs, VA",Hot Springs,Virginia,United States,37.99957,-79.83172,travel,high,,5,2019-06-22,2019-06-26
+"Secaucus, NY","Secaucus, NJ",Secaucus,New Jersey,United States,40.78955,-74.05653,travel,high,Secaucus is in New Jersey; the sheet says NY,2,2019-07-20,2019-09-01
+"Alexandria, MN","Alexandria, MN",Alexandria,Minnesota,United States,45.88524,-95.37754,travel,high,,6,2019-08-10,2024-07-11
+"Eagan, MN","Eagan, MN",Eagan,Minnesota,United States,44.80413,-93.16689,travel,high,,19,2019-08-11,2026-08-23
+Jersey City2,"Jersey City, NJ",Jersey City,New Jersey,United States,40.72816,-74.07764,home,high,his second Jersey City home,102,2019-09-02,2020-07-15
+Jersey City Studio3,"Jersey City, NJ",Jersey City,New Jersey,United States,40.72816,-74.07764,studio,high,,107,2019-09-04,2020-05-02
+"Midland, TX","Midland, TX",Midland,Texas,United States,31.99735,-102.07791,travel,high,,2,2019-12-05,2019-12-06
+"Keene, NH","Keene, NH",Keene,New Hampshire,United States,42.93369,-72.27814,travel,high,,3,2020-02-06,2020-02-08
+Severna Park Studio,"Severna Park, MD",Severna Park,Maryland,United States,39.07039,-76.54524,studio,high,"spring 2020, with family",20,2020-05-05,2020-06-06
+"Hartford, CT Studio","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,high,,52,2020-08-01,2020-09-26
+"Hartford, CT","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,home,high,,42,2020-08-02,2023-05-21
+"Hartford, CT Studio 2","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,high,,774,2020-09-27,2023-03-13
+"Nyack, NY","Nyack, NY",Nyack,New York,United States,41.09065,-73.91791,travel,high,,3,2021-04-15,2021-04-17
+"Lancaster, PA","Lancaster, PA",Lancaster,Pennsylvania,United States,40.03788,-76.30551,travel,high,,2,2021-08-19,2021-08-20
+Dutch Wonderland,"Lancaster, PA",Lancaster,Pennsylvania,United States,40.03788,-76.30551,travel,high,"Dutch Wonderland amusement park, Lancaster, PA",1,2021-08-21,2021-08-21
+"Nanuet, NY","Nanuet, NY",Nanuet,New York,United States,41.08871,-74.01347,travel,high,,1,2021-08-28,2021-08-28
+Lake Welch,"Lake Welch, NY",,New York,United States,41.226,-74.045,travel,high,"Lake Welch, Harriman State Park (coordinates approximate); coordinates fixed: not in the geocoder; Lake Welch in Harriman State Park, read off a map",1,2021-08-29,2021-08-29
+Uconn Hostpital,"Farmington, CT",Farmington,Connecticut,United States,41.71982,-72.83204,travel,high,"UConn Health hospital, Farmington, CT",1,2021-09-16,2021-09-16
+Times Square,"New York, NY",New York,New York,United States,40.71427,-74.00597,travel,high,,1,2021-11-03,2021-11-03
+Airport,,,,,,,unknown,low,"an airport; each song takes the place of the nearest song with a real place. Not a fixed place, resolves per song: Hartford, CT x1, Denver, CO x1, Eagan, MN x1, Bogotá, Colombia x1",4,2022-02-16,2022-10-14
+"Milford, CT","Milford, CT",Milford,Connecticut,United States,41.22232,-73.0565,travel,high,,1,2022-08-12,2022-08-12
+"Bogota, Columbia","Bogotá, Colombia",Bogotá,Bogota D.C.,Colombia,4.60971,-74.08175,travel,high,"Devcon 6, Oct 2022",4,2022-10-10,2022-10-13
+"Sturbridge, MA","Sturbridge, MA",Sturbridge,Massachusetts,United States,42.10843,-72.07869,travel,high,,1,2022-10-22,2022-10-22
+Barcelona,"Barcelona, Spain",Barcelona,Catalonia,Spain,41.38879,2.15899,travel,high,,3,2022-10-27,2022-10-29
+Copenhagen,"Copenhagen, Denmark",Copenhagen,Capital Region,Denmark,55.67594,12.56553,travel,high,,4,2022-11-11,2022-11-14
+"Weatogue, CT","Weatogue, CT",Weatogue,Connecticut,United States,41.84371,-72.82843,travel,high,village in Simsbury,2,2023-02-18,2023-02-19
+"Hartford, CT Studio 3","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,high,,781,2023-03-14,2025-07-07
+Downtown Hartford,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,home,high,,1,2023-03-18,2023-03-18
+School,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"his daughter's school, near home. Not a fixed place, all 2 songs resolve to Hartford, CT",2,2023-04-22,2025-04-04
+In The Woods,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"somewhere outdoors, near home. Not a fixed place, all 2 songs resolve to Hartford, CT",2,2023-04-23,2025-05-24
+"Oakland, MD","Oakland, MD",Oakland,Maryland,United States,39.40787,-79.40671,travel,high,"Garrett County, family road trip",5,2023-07-02,2023-07-07
+The Rock Maze,"Oakland, MD",Oakland,Maryland,United States,39.40787,-79.40671,travel,medium,"a rock formation on the Oakland, MD trip; Oakland songs on either side",1,2023-07-06,2023-07-06
+"Newark, NJ","Newark, NJ",Newark,New Jersey,United States,40.73566,-74.17237,travel,high,,1,2023-07-08,2023-07-08
+Saratoga Springs,"Saratoga Springs, NY",Saratoga Springs,New York,United States,43.08313,-73.78457,travel,high,"Saratoga Springs, NY (a lake week, Aug 2024), not the one in Utah",7,2024-08-15,2024-08-23
+"Essex Junction, VT","Essex Junction, VT",Essex Junction,Vermont,United States,44.49061,-73.11096,travel,high,,2,2024-10-06,2024-10-09
+"Westford, VT","Westford, VT",Westford,Vermont,United States,44.61199,-73.00875,travel,high,,2,2024-10-07,2024-10-08
+On A Tree Stump,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"a tree cut down 'last week', so probably at home. Not a fixed place, its one song resolves to Hartford, CT",1,2024-10-20,2024-10-20
+Puerto Rico,"San Juan, PR",San Juan,San Juan,Puerto Rico,18.46633,-66.10572,travel,low,"island only; coordinates are San Juan. One song mentions El Yunque, in the much wetter east",6,2024-12-21,2024-12-26
+Studio ROAR,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,low,"a friend's new studio; Hartford songs on either side. Not a fixed place, its one song resolves to Hartford, CT",1,2025-02-17,2025-02-17
+Doctor's Office,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"near home. Not a fixed place, its one song resolves to Hartford, CT",1,2025-03-05,2025-03-05
+Owen's House,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"a friend's house; Hartford songs on either side. Not a fixed place, its one song resolves to Hartford, CT",1,2025-04-20,2025-04-20
+"Hartford, CT Studio 4","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,high,,357,2025-07-08,2026-10-20
+"Weatauge, CT","Weatogue, CT",Weatogue,Connecticut,United States,41.84371,-72.82843,travel,high,"spelling of Weatogue, in Simsbury",2,2025-08-23,2025-11-30
+Prospect Park,"Prospect Park, Brooklyn, NY",Brooklyn,New York,United States,40.6626,-73.96903,travel,high,,1,2025-10-14,2025-10-14
+Downtown Brooklyn,"Downtown Brooklyn, Brooklyn, NY",Brooklyn,New York,United States,40.69371,-73.98596,travel,high,,1,2025-10-15,2025-10-15
+Roulette,"Downtown Brooklyn, Brooklyn, NY",Brooklyn,New York,United States,40.69371,-73.98596,travel,high,"Roulette Intermedium, 509 Atlantic Ave, Brooklyn (#6133, live at Kinference 2025)",1,2025-10-16,2025-10-16
+West Hartford APT,"West Hartford, CT",West Hartford,Connecticut,United States,41.76204,-72.74204,home,high,,52,2025-10-18,2026-10-12
+In The Park,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"a park, near home. Not a fixed place, its one song resolves to Hartford, CT",1,2025-11-06,2025-11-06
+"Manchester, CT","Manchester, CT",Manchester,Connecticut,United States,41.77593,-72.52148,travel,high,,1,2025-11-29,2025-11-29
+"Bayonne, NJ","Bayonne, NJ",Bayonne,New Jersey,United States,40.66871,-74.11431,travel,high,,1,2025-12-21,2025-12-21
+Maryland,"Severna Park, MD",Severna Park,Maryland,United States,39.07039,-76.54524,travel,medium,"state only; Christmas 2025 and June 2026, taken to be family in Severna Park",18,2025-12-22,2026-06-26
+New Jersey,New Jersey,,New Jersey,United States,40.21705,-74.74294,travel,low,"state only (#6211, on the way home from Maryland); coordinates are Trenton, the capital, which is on that drive",1,2026-01-02,2026-01-02
+"Palo Alto, CA","Palo Alto, CA",Palo Alto,California,United States,37.44188,-122.14302,travel,high,,3,2026-01-23,2026-01-25
+"Burlingame, CA","Burlingame, CA",Burlingame,California,United States,37.5841,-122.36608,travel,high,,1,2026-01-26,2026-01-26
+West Hartford Conference Room,"West Hartford, CT",West Hartford,Connecticut,United States,41.76204,-72.74204,home,high,,2,2026-02-08,2026-02-23
+"Paramus, NJ","Paramus, NJ",Paramus,New Jersey,United States,40.94454,-74.07542,travel,high,,2,2026-06-27,2026-06-28
+Charles' Studio,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,low,"a friend's studio; Hartford songs on either side. Not a fixed place, its one song resolves to Hartford, CT",1,2026-07-06,2026-07-06
+Palm Springs,"Palm Springs, CA",Palm Springs,California,United States,33.8303,-116.54529,travel,high,,3,2026-07-30,2026-08-01
+Connecticut Convention Center,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,home,high,in downtown Hartford,1,2026-09-13,2026-09-13

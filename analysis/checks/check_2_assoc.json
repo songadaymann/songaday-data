@@ -1,0 +1,135 @@
+{
+ "weekday_mood": [
+  {
+   "method": "Wald yearxhome_era FE, cl. ym",
+   "W": 207.168853348904,
+   "df": 66,
+   "G": 214,
+   "p_chi2": 1.7417279420578534e-16,
+   "p_F": 5.0080775716513764e-05
+  },
+  {
+   "method": "Wald week FE, cl. ym",
+   "W": 209.26523015751047,
+   "df": 66,
+   "G": 214,
+   "p_chi2": 8.390997440138304e-17,
+   "p_F": 4.049701721133524e-05
+  },
+  {
+   "method": "perm: weekday shuffled within calendar week",
+   "V": 0.05847009299712011,
+   "V_chance": 0.040171389514010454,
+   "p": 0.0002
+  }
+ ],
+ "beard_mood": [
+  {
+   "method": "Wald yearxhome_era FE, cl. ym",
+   "W": 115.03438127686573,
+   "df": 22,
+   "G": 214,
+   "p_chi2": 1.3801711037982688e-14,
+   "p_F": 1.0912986245208675e-09
+  },
+  {
+   "method": "Wald ym FE, cl. ym",
+   "W": 146.1173830684841,
+   "df": 22,
+   "G": 214,
+   "p_chi2": 2.5753912256788538e-20,
+   "p_F": 7.742256172898669e-13
+  },
+  {
+   "method": "Wald week FE, cl. ym",
+   "W": 124.72013211073948,
+   "df": 22,
+   "G": 214,
+   "p_chi2": 2.40470664275053e-16,
+   "p_F": 1.1015222450900671e-10
+  },
+  {
+   "method": "perm: circular shift, year-month strata",
+   "V": 0.08247394556071028,
+   "V_chance": 0.02923065289240637,
+   "p": 0.0002
+  }
+ ],
+ "travel_mood": [
+  {
+   "method": "Wald yearxhome_era FE, cl. ym",
+   "W": 30.36090750205182,
+   "df": 11,
+   "G": 214,
+   "p_chi2": 0.0013903652293074517,
+   "p_F": 0.003674095247118884
+  },
+  {
+   "method": "Wald ym FE, cl. ym",
+   "W": 54.812954802051266,
+   "df": 11,
+   "G": 214,
+   "p_chi2": 8.385297027003012e-08,
+   "p_F": 1.7585170847272368e-06
+  },
+  {
+   "method": "Wald yearxhome_era FE, cl. year",
+   "W": 35.06651376828689,
+   "df": 11,
+   "G": 18,
+   "p_chi2": 0.0002416184340873853,
+   "p_F": 0.37030437159217483
+  },
+  {
+   "method": "perm: circular shift, year-month strata",
+   "V": 0.05886686159312921,
+   "V_chance": 0.03474118897525133,
+   "p": 0.0006
+  }
+ ],
+ "season_mood": [
+  {
+   "method": "perm: each year's months rotated 0-11",
+   "V": 0.06430308871804212,
+   "V_chance": 0.05511268105906818,
+   "p": 0.0762
+  },
+  {
+   "method": "perm: rotation, full years 2009-2025",
+   "V": 0.062284346267135755,
+   "V_chance": 0.056505875550477626,
+   "p": 0.1828
+  },
+  {
+   "method": "split-half odd vs even years, cell-residual correlation",
+   "r": 0.009403176888511753
+  }
+ ],
+ "era_mood": [
+  {
+   "method": "perm: 3 random contiguous cut points, eras >= 365 songs",
+   "V": 0.1459772356953469,
+   "V_chance": 0.1492909471880445,
+   "p": 0.6852
+  },
+  {
+   "method": "perm: circular shift >= 365 (as analyze.py)",
+   "V": 0.1459772356953469,
+   "V_chance": 0.12870421769418913,
+   "p": 0.0012
+  },
+  {
+   "method": "slide all era boundaries by a common offset",
+   "p": 0.579088471849866,
+   "n_offsets": 372
+  },
+  {
+   "method": "inside hartford: V of 4 equal contiguous chunks",
+   "V": 0.1552516886450129
+  },
+  {
+   "method": "inside jersey_city: V of 4 equal contiguous chunks",
+   "V": 0.15730383060398048
+  }
+ ]
+}
