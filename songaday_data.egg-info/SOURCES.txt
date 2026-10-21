@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+songaday_data.egg-info/PKG-INFO
+songaday_data.egg-info/SOURCES.txt
+songaday_data.egg-info/dependency_links.txt
+songaday_data.egg-info/requires.txt
+songaday_data.egg-info/top_level.txt
