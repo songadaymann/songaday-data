@@ -1,8 +1,9 @@
 """Write web/lab-extra.json, the data behind the tools on songaday.studio/data.
 
 lab.json (web/export.py) holds what the "every day" field and the charts draw. This file adds
-what the birthday lookup, the song finder, the one-year numbers and the "over the years" charts
-need: a few more values per song, and a few sums per year. It uses only the standard library,
+what the lookups, the things to press and the "over the years" charts need: a few more values
+per song (length, tempo, topics, instrument, weather, home), which videos are gone, and a few
+sums per year. It uses only the standard library,
 so it runs without the project's environment.
 
     python3 web/export_extra.py
@@ -31,6 +32,9 @@ INSTRUMENTS = 6       # how many main instruments get their own line
 TOPICS_PER_YEAR = 4
 GEM_MIN_VOTES = 3     # songaday.fan votes needed before a rating counts
 GEM_MIN_SCORE = 8.0
+# The four homes, in order. A song belongs to the home he had then, even if written on a trip.
+ERAS = ["berkeley", "brooklyn", "jersey_city", "hartford"]
+ERA_LABELS = ["Berkeley", "Brooklyn", "Jersey City", "Hartford"]
 
 
 def number(value):
@@ -67,7 +71,10 @@ def main():
         "topics": [[topic_index[t] for t in topics_of(s)] for s in songs],
         "inst": [inst_index.get(s["main_instrument"]) for s in songs],
         "wx": [WEATHER.get(s["weather_label"]) for s in songs],
+        "era": [ERAS.index(s["home_era"]) if s["home_era"] in ERAS else None for s in songs],
     }
+    # Songs whose video YouTube no longer returns: the page skips them where it shows a picture.
+    gone = [int(s["number"]) for s in songs if s["yt_video_status"] == "unavailable" or not s["youtube_id"]]
 
     years = sorted({int(s["year"]) for s in songs})
     by_year = {y: [s for s in songs if int(s["year"]) == y] for y in years}
@@ -94,8 +101,9 @@ def main():
     gems.sort(key=lambda g: (-g["score"], -g["votes"], g["views"]))
 
     data = {
-        "labels": {"topic": topic_labels, "inst": inst_labels, "wx": WEATHER_LABELS},
+        "labels": {"topic": topic_labels, "inst": inst_labels, "wx": WEATHER_LABELS, "era": ERA_LABELS},
         "songs": rows,
+        "gone": gone,
         "years": years,
         "length_median": [median(y, "length_seconds") for y in years],
         "tempo_median": [median(y, "tempo_bpm") for y in years],
