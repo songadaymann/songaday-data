@@ -8,30 +8,22 @@ number,column,current_value,proposed_value,reason
 156,all styles,"Personal, Funny, Plea Frustrated","Personal, Funny, Plea, Frustrated","""Plea Frustrated"" -> ""Plea"" + ""Frustrated"""
 156,other styles,"Funny, Plea Frustrated","Funny, Plea, Frustrated","""Plea Frustrated"" -> ""Plea"" + ""Frustrated"""
 193,proper noun,Myspace,MySpace,"""Myspace"" -> ""MySpace"" (the spelling most songs use)"
-204,title,http://commondreams.org,Commondreams.org,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 210,noun,"Theme Song, Web series","Theme Song, Web Series","""Web series"" -> ""Web Series"" (the spelling most songs use)"
-223,title,http://courseopedia.com,Courseopedia.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 241,noun,My Appearence,My Appearance,"""My Appearence"" -> ""My Appearance"""
 268,genre,Spoken word,Spoken Word,"""Spoken word"" -> ""Spoken Word"""
-285,title,http://nextivafax.com,Nextivafax.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 285,all styles,,(fill in),missing
 286,all styles,,(fill in),missing
-288,title,http://kickstarter.com,Kickstarter.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 297,all styles,,(fill in),missing
-299,title,http://nosweatapparel.com,NoSweatApparel.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 355,noun,Food poisoning,Food Poisoning,"""Food poisoning"" -> ""Food Poisoning"""
 356,noun,Food poisoning,Food Poisoning,"""Food poisoning"" -> ""Food Poisoning"""
 364,noun,My Appearence,My Appearance,"""My Appearence"" -> ""My Appearance"""
 367,length,1.21,1:21,not m:ss
-368,title,http://www.tsowf.tumblr.com,Www.tsowf.tumblr.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 368,length,1.38,1:38,not m:ss
 369,length,1.12,1:13,"not m:ss, and the catalog has 1:13"
 375,all styles,,(fill in),missing
-397,title,http://ipage.com,Ipage.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 404,all styles,"Cheesy, Silly, Recylcing","Cheesy, Silly, Recycling","""Recylcing"" -> ""Recycling"""
 404,other styles,"Silly, Recylcing","Silly, Recycling","""Recylcing"" -> ""Recycling"""
 405,length,:50,0:50,not m:ss
-414,title,http://socialbuy.com,Socialbuy.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 427,length,0;57,0:56,"not m:ss, and the catalog has 0:56"
 441,all styles,,(fill in),missing
 441,noun,"Animals, Safari, Ostrich, Rhino, Zebra, Giraffe, Wildabeasts, Lion","Animals, Safari, Ostrich, Rhino, Zebra, Giraffe, Wildebeests, Lion","""Wildabeasts"" -> ""Wildebeests"""
@@ -39,18 +31,15 @@ number,column,current_value,proposed_value,reason
 447,title,"Acoustic Guitar, Synths, Bass, Drums",42Below,"title doesn't match this song; YouTube title ""Song A Day #447: 42Below"""
 486,location,"Pensacola,FL","Pensacola, FL",spelling
 487,location,"Pensacola,FL","Pensacola, FL",spelling
-506,title,http://skinit.com,Skinit.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 508,videoID,Zp5XMfdjwB0,(find this song's video),"Zp5XMfdjwB0 (""Song A Day #537: I Like It When My Friends Eat The Things I Bake"" on Jonathan Mann) is song #536's video"
 515,tempo,na,(fill in),"missing (written as ""na"")"
 521,all styles,,(fill in),missing
 561,proper noun,Iphone 4,iPhone 4,"""Iphone 4"" -> ""iPhone 4"""
-601,title,http://songatron.com,Songatron.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 638,proper noun,Techcrunch,TechCrunch,"""Techcrunch"" -> ""TechCrunch"""
 667,inKey,na,(fill in),"missing (written as ""na"")"
 695,title,80,Cthulhu And Zeus Sitting In A Tree,"title doesn't match this song; YouTube title ""Song A Day #695: Cthulhu And Zeus Sitting in A Tree"""
 695,tempo,na,(fill in),"missing (written as ""na"")"
 701,length,3:!5,3:16,"not m:ss, and the catalog has 3:16"
-719,title,http://e-shopping.com,E-shopping.com,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 733,all styles,"Funny, Narrative, Dark, Funny","Funny, Narrative, Dark","""Funny"" is listed twice"
 733,other styles,"Narrative, Dark, Funny","Narrative, Dark",should be all styles minus the main one
 748,all instruments,"Baritone Ukulele, Acoustic, Bass, Drums","Baritone Ukulele, Acoustic Guitar, Bass, Drums","""Acoustic"" -> ""Acoustic Guitar"""
@@ -76,7 +65,6 @@ number,column,current_value,proposed_value,reason
 960,inKey,–°,C,the letter C is a look-alike character (Cyrillic С or its garbled bytes)
 965,noun,"Real name Policy, Company","Real Name Policy, Company","""Real name Policy"" -> ""Real Name Policy"""
 1022,inKey,–°,C,the letter C is a look-alike character (Cyrillic С or its garbled bytes)
-1028,title,http://onlineforex.net,OnlineForex.net,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 1034,noun,Presidential Electrion,Presidential Election,"""Presidential Electrion"" -> ""Presidential Election"""
 1043,location,"Tuscon, AC","Tucson, AZ",spelling
 1043,all instruments,"Baritone Ukulele, Acoustic Guitar, Tamborine, Melodica","Baritone Ukulele, Acoustic Guitar, Tambourine, Melodica","""Tamborine"" -> ""Tambourine"""
@@ -174,7 +162,6 @@ number,column,current_value,proposed_value,reason
 2277,all styles,"Groovy, Funmy","Groovy, Funny","""Funmy"" -> ""Funny"""
 2277,other styles,Funmy,Funny,"""Funmy"" -> ""Funny"""
 2457,noun,Neice,Niece,"""Neice"" -> ""Niece"""
-2557,title,http://songaday.org,Songaday.org,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell); the public sheet has the text
 2572,length,1;35,1:34,"not m:ss, and the catalog has 1:34"
 2579,videoID,https://youtu.be/BassE45R51bs,bAsE45R51bs,"""BassE45R51bs"" isn't an 11-character video ID; use bAsE45R51bs (""Siracusa Saltines"" on Jonathan Mann)"
 2606,videoID,https://youtu.be/2PwZUABassqE,2PwZUABasqE,"""2PwZUABassqE"" isn't an 11-character video ID; use 2PwZUABasqE (""I Got No Time"" on Jonathan Mann)"
@@ -241,7 +228,6 @@ number,column,current_value,proposed_value,reason
 3868,noun,Improvised,Improv,"""Improvised"" -> ""Improv"""
 3878,noun,Leucochloridium Paradoxm,Leucochloridium Paradoxum,"""Leucochloridium Paradoxm"" -> ""Leucochloridium Paradoxum"""
 3896,location,"Secaucus, NY","Secaucus, NJ",spelling
-4020,videoID,100,UCaoFZ_rxCk,working spreadsheet: not a video ID; the public sheet has the right one
 4035,all instruments,"Synths, Electrc Guitar, Drums","Synths, Electric Guitar, Drums","""Electrc Guitar"" -> ""Electric Guitar"""
 4035,other instruments,"Electrc Guitar, Drums","Electric Guitar, Drums","""Electrc Guitar"" -> ""Electric Guitar"""
 4092,videoID,https://youtu.be/BassYXkpM_X4,bASYXkpM_X4,"""BassYXkpM_X4"" isn't an 11-character video ID; use bASYXkpM_X4 (""We've Been Here For Less Time Than The Dinosaurs | Song A Day #4092"" on Jonathan Mann)"
@@ -393,13 +379,12 @@ number,column,current_value,proposed_value,reason
 5091,other instruments,"Bass, Drusm","Bass, Drums","""Drusm"" -> ""Drums"""
 5094,all instruments,Baritone Ukelele,Baritone Ukulele,"""Baritone Ukelele"" -> ""Baritone Ukulele"""
 5094,main instrument,Baritone Ukelele,Baritone Ukulele,"""Baritone Ukelele"" -> ""Baritone Ukulele"""
-5102,(whole row),"rows #5102-#5113 blank, no rows after",songs #5102-#6502,the public sheet stops at #5101 (2022-12-19); the later songs are only in the working spreadsheet
+5102,(whole row),"rows #5102-#5113 blank, no rows after",songs #5102-#6538,the public sheet stops at #5101 (2022-12-19); the later songs are only in the working spreadsheet
 5103,all styles,"Rambling, Dark, Distorted, Good","Rambling, Dark, Distortion, Good","""Distorted"" -> ""Distortion"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5107,all instruments,Baritone Uke,Baritone Ukulele,"""Baritone Uke"" -> ""Baritone Ukulele"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5108,all instruments,"Baritone Uke, Samples, Synths, Drums, Drum Machine","Baritone Ukulele, Samples, Synths, Drums, Drum Machine","""Baritone Uke"" -> ""Baritone Ukulele"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5109,all instruments,Baritone Uke,Baritone Ukulele,"""Baritone Uke"" -> ""Baritone Ukulele"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5113,all instruments,Baritone Uke,Baritone Ukulele,"""Baritone Uke"" -> ""Baritone Ukulele"" (not in the public sheet; value from the working spreadsheet via the catalog)"
-5117,title,Sat Dec 30 1899 06:11:00 GMT-0500 (Eastern Standard Time),11:11,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell)
 5139,topic,Epiphany and Jupiter,"Epiphany, Jupiter","""Epiphany and Jupiter"" -> ""Epiphany"" + ""Jupiter"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5140,topic,Epiphany and Jupiter,"Epiphany, Jupiter","""Epiphany and Jupiter"" -> ""Epiphany"" + ""Jupiter"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5140,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
@@ -430,7 +415,6 @@ number,column,current_value,proposed_value,reason
 5275,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
 5276,all instruments,Baritone Uke,Baritone Ukulele,"""Baritone Uke"" -> ""Baritone Ukulele"" (not in the public sheet; value from the working spreadsheet via the catalog)"
 5284,all instruments,"Piano, Electr Guitar, Synths, Drums","Piano, Electric Guitar, Synths, Drums","""Electr Guitar"" -> ""Electric Guitar"" (not in the public sheet; value from the working spreadsheet via the catalog)"
-5287,title,http://beaconcha.in/,Beaconcha.in,working spreadsheet: the cell exports as a URL or an 1899 date (a hyperlinked or time-formatted cell)
 5289,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
 5293,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
 5295,topic,Epiphany and Jupiter,"Epiphany, Jupiter","""Epiphany and Jupiter"" -> ""Epiphany"" + ""Jupiter"" (not in the public sheet; value from the working spreadsheet via the catalog)"
@@ -614,3 +598,13 @@ number,column,current_value,proposed_value,reason
 6502,length,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
 6502,inKey,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
 6502,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6503,length,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6503,inKey,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6503,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6504,length,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6504,inKey,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6504,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6505,length,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6505,inKey,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6505,tempo,,(fill in),missing (not in the public sheet; value from the working spreadsheet via the catalog)
+6512,all instruments,"Baritone Ukelele, Electric Guitar, Drums, Synths","Baritone Ukulele, Electric Guitar, Drums, Synths","""Baritone Ukelele"" -> ""Baritone Ukulele"" (not in the public sheet; value from the working spreadsheet via the catalog)"
