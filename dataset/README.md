@@ -189,9 +189,9 @@ like the code.
 
 ### YouTube
 
-Source: `views.csv`. Counts come from a YouTube Data API snapshot taken by the
-songaday-toolkit on 2026-10-18; for 4 videos the API no longer returns, from the views column
-of Jonathan's master spreadsheet (exported 2026-08-04). They describe the video in
+Source: `views.csv`. Counts come from a YouTube Data API snapshot taken by `views.py` on
+2026-11-26; for 4 videos the API no longer returns, from the views column of Jonathan's
+master spreadsheet (exported 2026-08-04). They describe the video in
 `youtube_id`. License: public YouTube statistics, subject to YouTube's terms (see caveats).
 
 | Column | Meaning | Units / values |
@@ -328,10 +328,9 @@ believing a pattern.
   is one of several, and others give a different count.
 
 **YouTube.**
-- Views are a snapshot (2026-10-18), not live, and 4 counts are older (on or before
-  2026-08-04, for videos that are no longer public, including #4145 with 923,570). #6501 to
-  #6538 came out after the snapshot and have no counts.
-- Views are extremely uneven: the top 1% of songs (65) have 75% of all 39.3 million views,
+- Views are a snapshot (2026-11-26), not live, and 4 counts are older (on or before
+  2026-08-04, for videos that are no longer public, including #4145 with 923,570).
+- Views are extremely uneven: the top 1% of songs (65) have 75% of all 40.1 million views,
   #3974 "Baby Yoda Baby Baby Yoda" alone 25%, and the median song has under 400. Use logs or ranks.
 - Old songs have had more time; divide by `yt_days_online`. 13 videos were uploaded more than
   30 days after their song (#1-#4 in 2021), so their counts cover a shorter life.
