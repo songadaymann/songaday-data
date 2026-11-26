@@ -4,7 +4,7 @@ Jonathan Mann has written and recorded a song every day since January 1, 2009. T
 every song as data, plus what was happening around it: where it was made and the weather
 there, the moon and planets, the news, and how many people have watched it.
 
-**`songaday.csv` is the one to start with.** It has one row per song and 121 columns, and it
+**`songaday.csv` is the one to start with.** It has one row per song and 126 columns, and it
 joins all the other files here. As of 2026-11-25 it has 6,538 songs: #1 (2009-01-01) to #6538
 (2026-11-25), with no gaps. Song #N is always dated 2009-01-01 + (N - 1) days.
 
@@ -23,6 +23,7 @@ edit these files by hand; fix the script and rerun it.
 | `views.csv` | 6,538 | song | `number` | `views.py` | view counts are public YouTube statistics (see caveats); ratings from songaday.fan |
 | `news.csv` | 6,538 | day, 2009-01-01 to 2026-11-25 | `date` | `news.py` | CC BY-SA 4.0 (Wikipedia headline text) |
 | `news_matches.csv` | 6,538 | song | `number` | `news.py` | CC BY-SA 4.0 (Wikipedia headline text) |
+| `sales.csv` | 10,739 | NFT sale of a song: 6,402 first sales and 4,337 resales, 2021-01-04 to 2026-11-26 | none (`number` repeats) | `sales.py` | public blockchain records; this compilation CC BY 4.0 |
 | `mode_estimates.csv` | 429 | song whose mode wasn't written down (#212-#271, #358-#727) | `number` | `modes.py` | computed here from Jonathan's recordings; MIT, like the code |
 
 `songaday.csv` leaves out four long text columns that stay in their own files: songs.csv's
@@ -55,7 +56,7 @@ Conventions:
 - **Text** is UTF-8. `description` can contain line breaks inside quotes, so count rows with
   a CSV reader, not `wc -l`.
 - **Prefixes** say where a column came from: none for the song itself, `place_` (places.csv
-  and weather.csv), `weather_`, `sky_`, `yt_` (YouTube), `fan_` (songaday.fan) and `news_`.
+  and weather.csv), `weather_`, `sky_`, `yt_` (YouTube), `fan_` (songaday.fan), `news_` and `sale_` (the first sale in sales.csv).
   Within each source the original column name is kept.
 
 ## Columns of songaday.csv
@@ -253,6 +254,57 @@ credit Wikipedia.
 | `news_match_excess` | `news_match_score` minus `news_control_score`. Rank by this to find the songs that really follow the news. | score |
 | `news_match_days_before` | Which day the best-matching headline came from: 0 the song's day, 1 the day before, 2 two days before | 0, 1, 2, blank |
 
+### The first sale
+
+Source: `sales.csv`, the row with `kind` = first_sale. Since 2021 each song has been sold once
+as a one-of-a-kind NFT; these columns say when and for how much. Blank for the 136 songs with
+no first sale on record (listed under [Known caveats](#known-caveats)).
+
+| Column | Meaning | Units / values |
+| --- | --- | --- |
+| `sale_date` | Day of the first sale. Often years after the song: #1-#4748 were all sold in 2021. | YYYY-MM-DD (UTC) |
+| `sale_price_eth` | What the first buyer paid | ETH |
+| `sale_price_usd` | The same in US dollars at that day's ETH price (Coinbase daily close) | USD |
+| `sale_venue` | Where it was sold | opensea_2021, mint_2021, zora_2022, gbm_v1, gbm_v2, gbm_zora, gbm_base, auction_2026, opensea_seaport (one song, #5264) |
+| `sale_resales` | How many later sales of the song sales.csv has | count, 0-6 |
+
+## Columns of sales.csv
+
+One row per sale, oldest first. Everything is read from the blockchains by
+[`../sources/sales.py`](../sources/sales.py); its docstring says which event or stored value
+each figure comes from, and [`../sources/README.md`](../sources/README.md#the-sale-contracts)
+lists the contracts.
+
+| Column | Meaning | Units / values |
+| --- | --- | --- |
+| `number` | Song number | 1-6538 |
+| `date` | Day of the sale. Marketplace sales and the 2021 mint: the day of the transaction. 2022 Zora auctions: the day of the winning bid. GBM and 2026 auctions: the day the auction ended, up to a few days after the winning bid. | YYYY-MM-DD (UTC) |
+| `kind` | first_sale: the first time the song was sold, by Jonathan, the SongADAO treasury or an auction. resale: any sale after that. | first_sale, resale |
+| `venue` | Where it was sold (see the table below) | text |
+| `chain` | Which blockchain the sale is recorded on | ethereum, zora, base |
+| `contract` | Address of the contract that records the sale: the auction or mint contract for first sales, the Song A Day collection for resales | 0x... |
+| `price` | What the buyer paid, fees and royalties included | in `currency` |
+| `currency` | ETH, or WETH (wrapped ETH, worth the same) | ETH, WETH |
+| `eth_usd` | ETH price that day: Coinbase's ETH-USD daily close | USD |
+| `price_usd` | `price` x `eth_usd` | USD |
+| `buyer` | Wallet that bought it (the winning bidder in an auction) | 0x... |
+| `seller` | Wallet that sold it. First sales: Jonathan's wallet in 2021, the treasury after. | 0x... |
+| `tx_hash` | The sale's transaction (auctions: the winning bid). Blank on Base, where the result is read from the contract's stored values. | 0x... or blank |
+| `bids` | Bids in the auction. Blank where there was no auction or (Base) bids can't be read. | count or blank |
+| `source` | events (read from the transaction's event log) or stored_values (read from the contract) | events, stored_values |
+| `note` | "sold in a bundle; price split evenly" (41 rows), "won but never collected from the auction contract" (2) | text |
+
+| `venue` | Songs | Sales | When | What it was |
+| --- | --- | --- | --- | --- |
+| `opensea_2021` | #3-#730 | 720 | 2021-01-04 to 2021-11-13 | The first two years of songs, listed on OpenSea: 0.1 ETH for the first year, 0.12 for the second |
+| `mint_2021` | #731-#4748 | 3,978 | 2021-12-31 | The launch of the Song A Day collection: every remaining song at 0.2 ETH, buyers got songs at random |
+| `zora_2022` | #4749-#5118 | 370 | 2022 | A daily auction on Zora's auction house |
+| `gbm_v1`, `gbm_v2` | #5119-#5478 | 333 | 2023 | A daily GBM auction on Ethereum |
+| `gbm_zora` | #5530-#5844 | 312 | 2024 | The same auction on the Zora network |
+| `gbm_base` | #5845-#6500 | 650 | 2025 to Oct 2026 | The same auction on Base |
+| `auction_2026` | #6501 on | 38 | from 2026-10-19 | The current auction contract, on Base |
+| `opensea_wyvern`, `opensea_seaport`, `blur`, `looksrare` | any | 4,338 | from 2021-12-31 | Resales of songs in the Song A Day collection on those marketplaces (one Seaport sale, #5264, is a first sale by the treasury) |
+
 ## Credit and licenses
 
 `songaday.csv` is CC BY 4.0. Credit "Jonathan Mann (Song A Day)", and the outside sources it
@@ -264,7 +316,7 @@ Wikipedia headline text, `news.csv` and `news_matches.csv`, are CC BY-SA 4.0. Se
 
 ## Known caveats
 
-**Correlations.** There are 121 columns, so hundreds of pairs will look related by chance.
+**Correlations.** There are 126 columns, so hundreds of pairs will look related by chance.
 Test the hypothesis you started with, correct for the number of comparisons, and check the
 control (a year earlier or later, or a shuffled date). Most columns also move with time: the
 home era drives the place, weather and season mix; views fall with the song's year; the sheet
@@ -308,6 +360,26 @@ believing a pattern.
 - From May to mid-July 2020 he was mostly with family (Severna Park, then Avon). Those songs
   are in the jersey_city era and count as traveling, though they're closer to a move than a
   trip.
+
+**Sales.**
+- `sales.csv` covers the one-of-a-kind NFT of each song. It does not cover editions (many
+  copies of a song at a small price), which were sold beside the auctions on Optimism, Zora
+  and Base and, since October 2026, as patron editions on Ethereum. The contracts are listed
+  in `../sources/README.md`.
+- 136 songs have no first sale. #5479-#5529 (51 songs, late 2023 to early 2024) were sold on
+  sound.xyz as editions, and the original went to one of the buyers; they are not read yet.
+  40 songs between #731 and #4748 were kept by the treasury in the 2021 mint. 33 auctions
+  ended with no bids or never started (#5151, 25 songs between #5205 and #5475, #5657,
+  #5715, #5837, #5996, #6210, #6443, #6453, #6469, #6486). 10 of the first 730 were never
+  sold from Jonathan's OpenSea wallet (#1, #2, #46, #395, #449, #500, #533, #535, #574, #635).
+- Resales are only the ones a marketplace recorded as a sale of a song in the Song A Day
+  collection on Ethereum, through OpenSea, Blur or LooksRare. Not included: resales of the
+  2021 OpenSea tokens before their owners upgraded them (2021 to early 2022), pool swaps
+  (about 1,600 transfers went through other contracts, mostly NFTX pools), private deals, and anything
+  on other marketplaces. So the resale totals are a floor.
+- `price_usd` uses one ETH price per UTC day. ETH often moves several percent in a day, and
+  an auction's `date` is the day it ended, not the day of the winning bid.
+- Buyer and seller are wallet addresses as recorded on chain. One person can have several.
 
 **Weather.**
 - Values are for the reanalysis grid cell around the place (about 9-25 km), on the place's

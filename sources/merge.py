@@ -9,9 +9,11 @@ Inputs (whichever exist; dataset/songs.csv is required):
   views.csv         YouTube views and songaday.fan ratings (views.py)         key: number
   news.csv          Wikipedia's Portal:Current events, per day (news.py)      key: date
   news_matches.csv  how strongly each song names that day's news (news.py)    key: number
+  sales.csv         every NFT sale of a song (sales.py); only the first sale  key: number
+                    is joined here, plus a count of the resales
 
 Each column keeps its source's name, with a prefix that says where it came from: place_,
-weather_, sky_, yt_ (YouTube), fan_ (songaday.fan) or news_. Song columns have no prefix
+weather_, sky_, yt_ (YouTube), fan_ (songaday.fan), news_ or sale_ (the NFT's first sale). Song columns have no prefix
 (except song_sources and song_flags). Derived columns are added for analysis: calendar
 fields, season, home era, at home or traveling, major or minor. dataset/README.md documents
 every column.
@@ -26,7 +28,9 @@ Checks. Any failure prints what's wrong, exits 1 and writes nothing:
     days, and its weekday and year agree with the date
   - every other table has unique keys, no keys outside the song list, and (where it has a
     date column) the same date for each song number
-  - every song is covered by every table (--allow-gaps writes anyway, with blanks)
+  - every song is covered by every table (--allow-gaps writes anyway, with blanks); sales.csv
+    is the exception, because not every song has been sold
+  - sales.csv has at most one first sale per song, and none for songs that don't exist
   - every Location string has a row in places.csv, and weather.csv's place agrees with it
   - the home-era boundaries below land on songs recorded at those homes
   - the output has one row per song, and the columns that should always be filled are
@@ -117,6 +121,9 @@ NEWS_MATCH_COLUMNS = {
     "matched_terms": "news_matched_terms", "match_score": "news_match_score",
     "control_score": "news_control_score", "days_before": "news_match_days_before",
 }
+# sales.csv's first-sale row, per song. sale_resales is counted from the resale rows.
+SALE_COLUMNS = {"date": "sale_date", "price": "sale_price_eth", "price_usd": "sale_price_usd",
+                "venue": "sale_venue"}
 # Song columns renamed so they can't be mistaken for another table's.
 SONG_RENAMES = {"sources": "song_sources", "flags": "song_flags"}
 SONG_DROPPED = ["generated_summary"]   # long machine-written text; stays in songs.csv
@@ -274,10 +281,15 @@ def check_eras(home_town, problems):
 
 
 def documented_columns():
-    """Column names listed in dataset/README.md's tables (rows that start with | `name`)."""
+    """Column names listed in dataset/README.md's "Columns of songaday.csv" tables (rows that
+    start with | `name`). Other files' column tables come after it and are left alone."""
     if not DATA_DICTIONARY.exists():
         return set()
     text = DATA_DICTIONARY.read_text(encoding="utf-8")
+    start = text.find("## Columns of songaday.csv")
+    if start >= 0:
+        end = text.find("\n## ", start + 1)
+        text = text[start: end if end >= 0 else len(text)]
     return set(re.findall(r"^\|\s*`([a-z0-9_]+)`", text, flags=re.M))
 
 
@@ -309,7 +321,8 @@ def main():
     song_numbers = set(songs["number"])
     song_dates = set(songs["date"])
 
-    names = ["places.csv", "weather.csv", "sky.csv", "views.csv", "news.csv", "news_matches.csv"]
+    names = ["places.csv", "weather.csv", "sky.csv", "views.csv", "news.csv", "news_matches.csv",
+             "sales.csv"]
     tables = {name: read_table(name) for name in names}
     print(f"songs.csv: {len(songs):,} songs, #1-#{len(songs)}, "
           f"{songs['date'].iloc[0]} to {songs['date'].iloc[-1]}")
@@ -487,6 +500,25 @@ def main():
         out = out[[c for c in out.columns if c != "news_match_days_before"] + ["news_match_days_before"]]
         title_diffs = (matches["title"].to_numpy() != out["title"].to_numpy()).sum()
 
+    # ---- The NFT's first sale (not every song has one) -----------------------------------
+    sales = tables["sales.csv"]
+    if sales is not None:
+        sales = sales.assign(number=sales["number"].astype(int))
+        strays = sorted(set(sales["number"]) - song_numbers)
+        if strays:
+            problems.append(f"sales.csv has sales of songs that don't exist: {strays[:10]}")
+        first = sales[sales["kind"] == "first_sale"]
+        if first["number"].duplicated().any():
+            problems.append("sales.csv has more than one first sale for songs "
+                            f"{sorted(first.loc[first['number'].duplicated(), 'number'])[:10]}")
+        if not first["currency"].isin(["ETH", "WETH"]).all():
+            problems.append("sales.csv has a first sale that wasn't paid in ETH")
+        first = first.drop_duplicates("number").set_index("number").reindex(songs["number"]).fillna("")
+        for source, target in SALE_COLUMNS.items():
+            out[target] = first[source].to_numpy()
+        resold = sales[sales["kind"] == "resale"].groupby("number").size()
+        out["sale_resales"] = [str(resold.get(n, 0)) for n in songs["number"]]
+
     # ---- Check the result ----------------------------------------------------------------
     if len(out) != len(songs) or out["number"].duplicated().any():
         problems.append(f"the merge made {len(out)} rows for {len(songs)} songs")
@@ -516,6 +548,10 @@ def main():
     if views is not None:
         print(f"  YouTube counts blanked because views.csv counted another video: "
               f"{len(wrong_video)} {wrong_video[:10]}")
+    if sales is not None:
+        sold = (out["sale_date"] != "").sum()
+        print(f"  Songs with a first sale in sales.csv: {sold:,} of {len(out):,}; "
+              f"resold at least once: {(out['sale_resales'] != '0').sum():,}")
     if matches is not None:
         print(f"  news_matches.csv titles that differ from songs.csv (songs.csv kept): {title_diffs}")
 

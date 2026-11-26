@@ -1,4 +1,4 @@
-"""Run the whole pipeline in order: songs, places, weather, sky, views, news, then merge.
+"""Run the whole pipeline in order: songs, places, weather, sky, views, news, sales, then merge.
 
 By default a step whose cache is already there runs offline, from the cache only, so a rerun
 makes no web requests and gives the same tables. A step with nothing cached yet goes online
@@ -37,6 +37,9 @@ STEPS = [
     ("sky", "sky.py", ["cache/sky/SE2001-2100.html", "cache/sky/LE2001-2100.html"], None),
     ("views", "views.py", ["cache/views/youtube", "cache/views/fan-ratings"], "--offline"),
     ("news", "news.py", ["cache/news/daily"], "--offline"),
+    ("sales", "sales.py",
+     ["cache/sales/logs", "cache/sales/state", "cache/sales/tx", "cache/sales/eth-usd.json"],
+     "--offline"),
     ("merge", "merge.py", [], None),
 ]
 NAMES = [name for name, _, _, _ in STEPS]
