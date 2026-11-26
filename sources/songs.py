@@ -226,6 +226,11 @@ SINGLE_FIELDS = {"mood", "beard", "genre"}  # one value per song
 BEARDS = {"Beard", "Clean", "Shadow", "Mustache", "Goatee"}
 
 # Location typos, for the fixes list only: dataset/songs.csv keeps location_raw as written.
+# Videos the catalog has against the wrong song. It gives #6210's video ("Game A Day | Song A Day
+# #6210", uploaded 2026-01-01) to #6209 and none to #6210; #6209's own is "Seventeen Years | Song A
+# Day #6209". Found 2026-11-26 by comparing every video's YouTube title with its song.
+YOUTUBE_FIXES = {6209: "udxkVHgpjA0", 6210: "yV4UhXMPlJw"}
+
 LOCATION_FIXES = {
     "nashville, TN": "Nashville, TN", "Pensacola,FL": "Pensacola, FL",
     "Tuscon, AC": "Tucson, AZ", "Bogota, Columbia": "Bogota, Colombia",
@@ -680,7 +685,8 @@ def main():
         sheet_video = youtube_candidate(s.get("videoID")) if s else ""
         options = [v for v in dict.fromkeys([c.get("yt"), sheet_video, *sorted(report_alternatives.get(n, ()))])
                    if v and YOUTUBE_ID_RE.match(v)]
-        chosen = next((v for v in options if on_own_channel(answers.get(v))), None) or \
+        chosen = YOUTUBE_FIXES.get(n) or \
+            next((v for v in options if on_own_channel(answers.get(v))), None) or \
             next((v for v in options if (answers.get(v) or {}).get("status") == 200), None) or \
             (options[0] if options else "")
         draft["youtube_id"] = chosen
