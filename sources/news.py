@@ -58,7 +58,19 @@ API_URL = "https://en.wikipedia.org/w/api.php"
 USER_AGENT = "songaday-data/0.1 (github.com/songadaymann/songaday-data)"
 
 FIRST_DAY = dt.date(2009, 1, 1)  # song #1
-LAST_DAY = dt.date(2026, 10, 20)  # the day before today's song (#6503 on 2026-10-21)
+
+
+def last_song_day():
+    """The date of the newest song in dataset/songs.csv, so the news always reaches the songs.
+
+    The newest days' pages are still being edited on Wikipedia; --refresh-recent fetches them
+    again later."""
+    path = Path(__file__).resolve().parent.parent / "dataset" / "songs.csv"
+    with open(path, newline="", encoding="utf-8") as handle:
+        return max(dt.date.fromisoformat(row["date"]) for row in csv.DictReader(handle))
+
+
+LAST_DAY = last_song_day()
 
 # Pause between live API requests, in seconds. The API is free; one request at a time.
 REQUEST_PAUSE = 1.0

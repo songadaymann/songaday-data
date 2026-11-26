@@ -1,6 +1,6 @@
 """Write web/lab.json, the data behind songaday.studio/data.
 
-Reads dataset/songaday.csv, dataset/places.csv, dataset/news.csv and analysis/aggregates.json
+Reads dataset/songaday.csv, dataset/places.csv, dataset/news.csv, dataset/mode_estimates.csv and analysis/aggregates.json
 (run the pipeline and analysis/analyze.py first) and keeps only what the page draws: one compact
 row per song for the "every day" field, plus the few aggregates the charts need. The numbers
 quoted in the page's text come from analysis/findings.md and analysis/second-opinions.md.
@@ -41,6 +41,14 @@ def clean(value, digits=None):
     return round(float(value), digits) if digits is not None else value
 
 
+def estimated_modes():
+    path = ROOT / "dataset" / "mode_estimates.csv"
+    if not path.exists():
+        return {}
+    est = pd.read_csv(path, keep_default_na=False)
+    return {str(int(n) - 1): int(m == "minor") for n, m in zip(est["number"], est["mode_estimated"]) if m}
+
+
 def main():
     songs = pd.read_csv(ROOT / "dataset" / "songaday.csv", low_memory=False).sort_values("number")
     places = pd.read_csv(ROOT / "dataset" / "places.csv")
@@ -51,7 +59,9 @@ def main():
 
     # Place names for the readout: canonical place per song, as an index into a label list.
     place_col = "place" if "place" in songs.columns else "places_place"
-    place_labels = sorted(songs[place_col].dropna().unique())
+    # The page names no Connecticut town: every place there reads "Connecticut".
+    place_names = songs[place_col].map(lambda p: "Connecticut" if isinstance(p, str) and p.endswith(", CT") else p)
+    place_labels = sorted(place_names.dropna().unique())
     place_index = {name: i for i, name in enumerate(place_labels)}
     mood_labels = sorted(songs["mood"].dropna().unique())
     mood_index = {name: i for i, name in enumerate(mood_labels)}
@@ -74,13 +84,16 @@ def main():
         "mood": [mood_index.get(m) for m in songs["mood"]],
         "family": [family(m) for m in songs["mood"]],
         "minor": [None if m == "unknown" else int(m == "minor") for m in songs["mode"]],
+        # Estimated from the recordings where only the root was written down (sources/modes.py):
+        # {song index: 1 minor or 0 major}. Drawn paler; no test or count uses them.
+        "minor_est": estimated_modes(),
         "key": [k if isinstance(k, str) else "" for k in songs["key"]],
         "temp": [clean(t, 1) for t in temp],
         "moon": [None if pd.isna(m) else int(round(m * 100)) for m in moon],
         "views": [None if pd.isna(v) else int(v) for v in views],
         "away": [None if pd.isna(t) else int(bool(t)) for t in traveling],
         "beard": [beard_map.get(b) for b in songs["beard"]],
-        "place": [place_index.get(p) for p in songs[place_col]],
+        "place": [place_index.get(p) for p in place_names],
     }
 
     lengths = songs["length_seconds"].dropna()

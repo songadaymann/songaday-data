@@ -17,6 +17,7 @@ each part comes from and what you may do with it.
 | `dataset/` (place coordinates) | Open-Meteo geocoding (GeoNames), https://open-meteo.com/en/docs/geocoding-api | CC BY 4.0 |
 | `dataset/` (news columns) | Wikipedia, "Portal:Current events", https://en.wikipedia.org/wiki/Portal:Current_events | CC BY-SA 4.0. Derived files that include headline text are under CC BY-SA 4.0 too. |
 | `dataset/` (moon and planet columns) | Computed here from astronomical formulas | Same as the code |
+| `dataset/sales.csv` and the `sale_` columns | Public blockchain records (Ethereum, Zora, Base) read through public nodes; ETH-USD daily close from Coinbase Exchange's public API | Facts on public ledgers; the compilation is CC BY 4.0 |
 
 ## 3. Licensed (paid or restricted): not included
 

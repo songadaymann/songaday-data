@@ -21,7 +21,7 @@ Norman's House,"Berkeley, CA",Berkeley,California,United States,37.87159,-122.27
 Santa Cruz,"Santa Cruz, CA",Santa Cruz,California,United States,36.97412,-122.0308,travel,high,,4,2011-05-14,2011-07-19
 "Canton, CT","Canton, CT",Canton,Connecticut,United States,41.82454,-72.89371,travel,high,"family; his base from Nov 2011 to Feb 2012, between Berkeley and Brooklyn",78,2011-07-02,2012-04-19
 Brooklyn,"Brooklyn, NY",Brooklyn,New York,United States,40.6501,-73.94958,travel,high,"only 4 of the 10 songs are from while he lived in Brooklyn (2012); the rest are visits (2011, 2015, 2019)",10,2011-10-06,2019-05-18
-In The Car,,,,,,,unknown,low,"in a car; each song takes the place of the nearest song with a real place. Not a fixed place, resolves per song: Hartford, CT x6, Brooklyn, NY x2, Berkeley, CA x1, Canton, CT x1, New York, NY x1, Avon, CT x1, Jersey City, NJ x1, West Hartford, CT x1",14,2011-11-07,2026-09-26
+In The Car,,,,,,,unknown,low,"in a car; each song takes the place of the nearest song with a real place. Not a fixed place, resolves per song: Hartford, CT x7, Brooklyn, NY x2, Berkeley, CA x1, Canton, CT x1, New York, NY x1, Avon, CT x1, Jersey City, NJ x1, West Hartford, CT x1",15,2011-11-07,2026-10-31
 "Tuscon, AC","Tucson, AZ",Tucson,Arizona,United States,32.22174,-110.92648,travel,high,"typo for Tucson, AZ; cross-country drive",1,2011-11-09,2011-11-09
 Utah,"Patagonia, AZ",Patagonia,Arizona,United States,31.53954,-110.7562,travel,low,"the sheet says Utah, but #1043 is Tucson and #1045 is Ozona, TX on the same cross-country drive, and Utah is far off that route. The song mentions ending up in Patagonia, which fits Patagonia, AZ, an hour south of Tucson. Needs a check",1,2011-11-10,2011-11-10
 "Ozona, TX","Ozona, TX",Ozona,Texas,United States,30.71017,-101.20067,travel,high,,1,2011-11-11,2011-11-11
@@ -141,12 +141,12 @@ Puerto Rico,"San Juan, PR",San Juan,San Juan,Puerto Rico,18.46633,-66.10572,trav
 Studio ROAR,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,low,"a friend's new studio; Hartford songs on either side. Not a fixed place, its one song resolves to Hartford, CT",1,2025-02-17,2025-02-17
 Doctor's Office,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"near home. Not a fixed place, its one song resolves to Hartford, CT",1,2025-03-05,2025-03-05
 Owen's House,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"a friend's house; Hartford songs on either side. Not a fixed place, its one song resolves to Hartford, CT",1,2025-04-20,2025-04-20
-"Hartford, CT Studio 4","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,high,,357,2025-07-08,2026-10-20
+"Hartford, CT Studio 4","Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,high,,362,2025-07-08,2026-10-30
 "Weatauge, CT","Weatogue, CT",Weatogue,Connecticut,United States,41.84371,-72.82843,travel,high,"spelling of Weatogue, in Simsbury",2,2025-08-23,2025-11-30
 Prospect Park,"Prospect Park, Brooklyn, NY",Brooklyn,New York,United States,40.6626,-73.96903,travel,high,,1,2025-10-14,2025-10-14
 Downtown Brooklyn,"Downtown Brooklyn, Brooklyn, NY",Brooklyn,New York,United States,40.69371,-73.98596,travel,high,,1,2025-10-15,2025-10-15
 Roulette,"Downtown Brooklyn, Brooklyn, NY",Brooklyn,New York,United States,40.69371,-73.98596,travel,high,"Roulette Intermedium, 509 Atlantic Ave, Brooklyn (#6133, live at Kinference 2025)",1,2025-10-16,2025-10-16
-West Hartford APT,"West Hartford, CT",West Hartford,Connecticut,United States,41.76204,-72.74204,home,high,,52,2025-10-18,2026-10-12
+West Hartford APT,"West Hartford, CT",West Hartford,Connecticut,United States,41.76204,-72.74204,home,high,,63,2025-10-18,2026-11-25
 In The Park,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,unknown,low,"a park, near home. Not a fixed place, its one song resolves to Hartford, CT",1,2025-11-06,2025-11-06
 "Manchester, CT","Manchester, CT",Manchester,Connecticut,United States,41.77593,-72.52148,travel,high,,1,2025-11-29,2025-11-29
 "Bayonne, NJ","Bayonne, NJ",Bayonne,New Jersey,United States,40.66871,-74.11431,travel,high,,1,2025-12-21,2025-12-21
@@ -159,3 +159,5 @@ West Hartford Conference Room,"West Hartford, CT",West Hartford,Connecticut,Unit
 Charles' Studio,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,studio,low,"a friend's studio; Hartford songs on either side. Not a fixed place, its one song resolves to Hartford, CT",1,2026-07-06,2026-07-06
 Palm Springs,"Palm Springs, CA",Palm Springs,California,United States,33.8303,-116.54529,travel,high,,3,2026-07-30,2026-08-01
 Connecticut Convention Center,"Hartford, CT",Hartford,Connecticut,United States,41.76371,-72.68509,home,high,in downtown Hartford,1,2026-09-13,2026-09-13
+"Roxbury, CT","Roxbury, Maine",Roxbury,Maine,United States,44.66978,-70.5934,unknown,low,"not in LOCATIONS yet; first geocoder hit, unchecked",1,2026-10-22,2026-10-22
+West Hartford Basement Studio,"West Hartford, CT",West Hartford,Connecticut,United States,41.76204,-72.74204,unknown,low,"not in LOCATIONS yet and the geocoder found nothing. Not a fixed place, all 18 songs resolve to West Hartford, CT",18,2026-11-02,2026-11-24

@@ -2931,7 +2931,7 @@ number,date,title,matched_terms,matched_items,match_score,days_before,control_sc
 2930,2017-01-08,Breakdancing for $$$,,,0,,0.0
 2931,2017-01-09,I Was Up in the Middle of the Note,,,0,,0.0
 2932,2017-01-10,Your Way of LifeWas Not Sustainable Anyway,,,0,,0.0
-2933,2017-01-11,The President is Compromised,Donald Trump,2017-01-09: Talks between top Donald Trump advisers and Speaker Paul Ryan happen at the capital to discuss tax reform.|2017-01-10: President-elect Donald Trump appoints businessman and son-in-law Jared Kushner as his senior advisor in the White House.|2017-01-11: President-elect of the United States Donald Trump holds his first post-election press conference in New York City.,0.9,2,0.63
+2933,2017-01-11,The President is Compromised,Donald Trump,2017-01-09: Talks between top Donald Trump advisers and Speaker Paul Ryan happen at the capital to discuss tax reform.|2017-01-11: President-elect of the United States Donald Trump holds his first post-election press conference in New York City.|2017-01-10: President-elect Donald Trump appoints businessman and son-in-law Jared Kushner as his senior advisor in the White House.,0.9,2,0.63
 2934,2017-01-12,They're Taking Your Heathcare Away,,,0,,0.0
 2935,2017-01-13,I had a really long day,,,0,,0.0
 2936,2017-01-14,Only You Can Save You,,,0,,0.0
@@ -2953,7 +2953,7 @@ number,date,title,matched_terms,matched_items,match_score,days_before,control_sc
 2952,2017-01-30,Trumps Didn't Keep Us Safe,Donald Trump,"2017-01-30: A petition, launched Sunday to cancel U.S. President Donald Trump's state visit to the United Kingdom later this year, tops 1 million signatures…|2017-01-28: Iran says it will take reciprocal action after U.S. President Donald Trump signed the executive order which limits immigration from seven…",0.96,0,1.22
 2953,2017-01-31,He Must Be Stopped,Donald Trump,"2017-01-30: A petition, launched Sunday to cancel U.S. President Donald Trump's state visit to the United Kingdom later this year, tops 1 million signatures…|2017-01-31: President Donald Trump has nominated Judge Neil Gorsuch to fill the vacant seat on the Supreme Court of the United States. Neil Gorsuch is the…",0.96,1,0.48
 2954,2017-02-01,Rex Tillerson is An Actual Villian,Rex Tillerson,"2017-02-01: The United States Senate, in a 56–43 vote, confirms Rex Tillerson's nomination as United States Secretary of State.",5.5,0,2.92
-2955,2017-02-02,He's Gonna Take Us to War,Iran,"2017-02-01: Iranian Minister of Defence Hossein Dehghan confirms Iran tested a new missile, claiming that the test did not violate the 2015 nuclear deal nor…",2.41,1,3.25
+2955,2017-02-02,He's Gonna Take Us to War,Iran|China,"2017-02-01: Iranian Minister of Defence Hossein Dehghan confirms Iran tested a new missile, claiming that the test did not violate the 2015 nuclear deal nor…|2017-02-02: Seven people are killed and two survived after a five-storey residential building collapsed in Wencheng County, China.",4.14,1,3.25
 2956,2017-02-03,He's Setting Up the Wall St. Bomb,,,0,,1.09
 2957,2017-02-04,We Made the System That Will Destroy Us,,,0,,0.0
 2958,2017-02-05,The Ballad of Judge Robart,James Robart,2017-02-04: The Department of Homeland Security says it has stopped enforcing the executive order per Judge James Robart's ruling in State of Washington v.…|2017-02-03: The justice department says it will not file for an emergency stay on Friday night.|2017-02-03: The U.S. Customs and Border Protection agency tells U.S. airlines that they should board travelers who had been blocked by the executive order…,4.36,1,0.0
@@ -6501,3 +6501,39 @@ number,date,title,matched_terms,matched_items,match_score,days_before,control_sc
 6500,2026-10-18,Pissin And Shittin And Pukin Like What,,,0,,0.0
 6501,2026-10-19,The Internet Is Dead Dead Dead,,,0,,0.0
 6502,2026-10-20,I Don't Like Flags,,,0,,0.0
+6503,2026-10-21,The Broken Keys of The Internet,,,0,,0.0
+6504,2026-10-22,Afternoon At Charles' House,,,0,,0.0
+6505,2026-10-23,Sink Or Swim,,,0,,0.0
+6506,2026-10-24,What Happens When You Die,,,0,,0.0
+6507,2026-10-25,Never Doubt,,,0,,0.0
+6508,2026-10-26,A Second Stomach Bug,,,0,,0.0
+6509,2026-10-27,I Been Pooping Out My Butt,,,0,,0.0
+6510,2026-10-28,I Drove My Leaf Down To Zero,,,0,,0.0
+6511,2026-10-29,Sometimes I Stare At My Screen,,,0,,0.0
+6512,2026-10-30,End Times Coming Now,,,0,,0.0
+6513,2026-10-31,Never Seen An Apocalypse Quite Like This,,,0,,0.0
+6514,2026-11-01,DO YOU WANT TO TOUCH YOUR MACBOOK?,,,0,,0.0
+6515,2026-11-02,Israel Comes To Me In My Dreams,,,0,,0.0
+6516,2026-11-03,Just Keep Walking,,,0,,0.0
+6517,2026-11-04,4 GOD IS NON-BINARY (James Talerico Remix),,,0,,0.0
+6518,2026-11-05,CRY MORE (Mehdi Hasan Remix),,,0,,0.0
+6519,2026-11-06,Abolish The Electoral College (2026),,,0,,0.0
+6520,2026-11-07,Healthcare Is A Human Right (Bernie Sanders Remix),,,0,,0.0
+6521,2026-11-08,Red Brick Wall (Sam Seder Remix),,,0,,0.0
+6522,2026-11-09,NO NO NO NO SCHUMER AND JEFFERIES,,,0,,0.0
+6523,2026-11-10,NO MORE DO NOTHING DEMOCRATS,,,0,,0.0
+6524,2026-11-11,11 Democrats Who Suck,,,0,,0.0
+6525,2026-11-12,Chuck And Hakeem Won't Leave (Paid To Lose),,,0,,0.0
+6526,2026-11-13,Basement,,,0,,0.0
+6527,2026-11-14,Grounded Flights,,,0,,0.0
+6528,2026-11-15,Kitty Nutella,,,0,,0.0
+6529,2026-11-16,Answer To The BORB! (Chicken Remix),,,0,,0.0
+6530,2026-11-17,Trump In The Bunker,,,0,,0.0
+6531,2026-11-18,CYBERATTACK,Cyberattack,"2026-11-17: American technology company Apple experiences an outage with several of its services, including Apple Pay, iCloud, the App Store, and AppleCare.…",2.06,1,0.0
+6532,2026-11-19,"Dark Gothic MAGA, I'm Not MAGA, CHAINSAW! (Elon Musk Remix)",,,0,,0.0
+6533,2026-11-20,"Goodbye, Fiona",,,0,,0.0
+6534,2026-11-21,I Take A Step Back (Mamdani Remix),,,0,,0.0
+6535,2026-11-22,Did Claude Prove The Reimann Hypothesis?,Claude,"2026-11-20: Anthropic employee and mathematician Levent Alpöge releases a claimed proof of the Riemann hypothesis, created with assistance from Claude.",5.23,2,0.0
+6536,2026-11-23,If P Equals NP,,,0,,0.0
+6537,2026-11-24,He's Chosen His War (Abdul El-Sayed Remix),,,0,,0.0
+6538,2026-11-25,Barrels of Lead Azide Are Going To Detonate (Robert McQueen Crashout Remix),Lead azide,"2026-11-25: The United States Army detonates nearly 5 tons of degrading lead azide at the Iowa Army Ammunition Plant in Middletown, Iowa, citing spontaneous…",3.27,0,3.26
