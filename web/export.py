@@ -59,7 +59,9 @@ def main():
 
     # Place names for the readout: canonical place per song, as an index into a label list.
     place_col = "place" if "place" in songs.columns else "places_place"
-    place_labels = sorted(songs[place_col].dropna().unique())
+    # The page names no Connecticut town: every place there reads "Connecticut".
+    place_names = songs[place_col].map(lambda p: "Connecticut" if isinstance(p, str) and p.endswith(", CT") else p)
+    place_labels = sorted(place_names.dropna().unique())
     place_index = {name: i for i, name in enumerate(place_labels)}
     mood_labels = sorted(songs["mood"].dropna().unique())
     mood_index = {name: i for i, name in enumerate(mood_labels)}
@@ -91,7 +93,7 @@ def main():
         "views": [None if pd.isna(v) else int(v) for v in views],
         "away": [None if pd.isna(t) else int(bool(t)) for t in traveling],
         "beard": [beard_map.get(b) for b in songs["beard"]],
-        "place": [place_index.get(p) for p in songs[place_col]],
+        "place": [place_index.get(p) for p in place_names],
     }
 
     lengths = songs["length_seconds"].dropna()

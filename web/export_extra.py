@@ -2,8 +2,8 @@
 
 lab.json (web/export.py) holds what the "every day" field and the charts draw. This file adds
 what the lookups, the things to press and the "over the years" charts need: a few more values
-per song (length, tempo, topics, instrument, weather, home), which videos are gone, and a few
-sums per year. It uses only the standard library,
+per song (length, tempo, topics, instrument, weather, home, place on the map), where those
+places are, which videos are gone, and a few sums per year. It uses only the standard library,
 so it runs without the project's environment.
 
     python3 web/export_extra.py
@@ -34,7 +34,9 @@ GEM_MIN_VOTES = 3     # songaday.fan votes needed before a rating counts
 GEM_MIN_SCORE = 8.0
 # The four homes, in order. A song belongs to the home he had then, even if written on a trip.
 ERAS = ["berkeley", "brooklyn", "jersey_city", "hartford"]
-ERA_LABELS = ["Berkeley", "Brooklyn", "Jersey City", "Hartford"]
+ERA_LABELS = ["Berkeley", "Brooklyn", "Jersey City", "Connecticut"]  # the page names no Connecticut town
+# The map shows one mark for all of Connecticut, at the middle of the state, and names no town there.
+CONNECTICUT = ("Connecticut", 41.6, -72.7)
 
 
 def number(value):
@@ -47,6 +49,23 @@ def number(value):
 def topics_of(song):
     """A song's topics, merged and without repeats, in the sheet's order."""
     return list(dict.fromkeys(MERGE.get(t, t) for t in song["topics"].split("|") if t))
+
+
+def spots_of(songs):
+    """The map's places, most songs first, and each song's place as an index into them."""
+    def spot(song):
+        if not song["place"]:
+            return None
+        if song["place"].endswith(", CT"):
+            return CONNECTICUT
+        return (song["place"], round(float(song["place_lat"]), 3), round(float(song["place_lon"]), 3))
+
+    of_song = [spot(s) for s in songs]
+    counts = collections.Counter(p for p in of_song if p)
+    assert len({name for name, _, _ in counts}) == len(counts), "a place has two positions"
+    ordered = [p for p, _ in sorted(counts.items(), key=lambda item: (-item[1], item[0][0]))]
+    index = {p: i for i, p in enumerate(ordered)}
+    return [[name, lat, lon, counts[(name, lat, lon)]] for name, lat, lon in ordered], [index.get(p) for p in of_song]
 
 
 def main():
@@ -73,6 +92,7 @@ def main():
         "wx": [WEATHER.get(s["weather_label"]) for s in songs],
         "era": [ERAS.index(s["home_era"]) if s["home_era"] in ERAS else None for s in songs],
     }
+    spots, rows["spot"] = spots_of(songs)
     # Songs whose video YouTube no longer returns: the page skips them where it shows a picture.
     gone = [int(s["number"]) for s in songs if s["yt_video_status"] == "unavailable" or not s["youtube_id"]]
 
@@ -103,6 +123,7 @@ def main():
     data = {
         "labels": {"topic": topic_labels, "inst": inst_labels, "wx": WEATHER_LABELS, "era": ERA_LABELS},
         "songs": rows,
+        "spots": spots,
         "gone": gone,
         "years": years,
         "length_median": [median(y, "length_seconds") for y in years],
