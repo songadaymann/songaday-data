@@ -1,6 +1,6 @@
 """Write web/lab.json, the data behind songaday.studio/data.
 
-Reads dataset/songaday.csv, dataset/places.csv, dataset/news.csv and analysis/aggregates.json
+Reads dataset/songaday.csv, dataset/places.csv, dataset/news.csv, dataset/mode_estimates.csv and analysis/aggregates.json
 (run the pipeline and analysis/analyze.py first) and keeps only what the page draws: one compact
 row per song for the "every day" field, plus the few aggregates the charts need. The numbers
 quoted in the page's text come from analysis/findings.md and analysis/second-opinions.md.
@@ -41,6 +41,14 @@ def clean(value, digits=None):
     return round(float(value), digits) if digits is not None else value
 
 
+def estimated_modes():
+    path = ROOT / "dataset" / "mode_estimates.csv"
+    if not path.exists():
+        return {}
+    est = pd.read_csv(path, keep_default_na=False)
+    return {str(int(n) - 1): int(m == "minor") for n, m in zip(est["number"], est["mode_estimated"]) if m}
+
+
 def main():
     songs = pd.read_csv(ROOT / "dataset" / "songaday.csv", low_memory=False).sort_values("number")
     places = pd.read_csv(ROOT / "dataset" / "places.csv")
@@ -74,6 +82,9 @@ def main():
         "mood": [mood_index.get(m) for m in songs["mood"]],
         "family": [family(m) for m in songs["mood"]],
         "minor": [None if m == "unknown" else int(m == "minor") for m in songs["mode"]],
+        # Estimated from the recordings where only the root was written down (sources/modes.py):
+        # {song index: 1 minor or 0 major}. Drawn paler; no test or count uses them.
+        "minor_est": estimated_modes(),
         "key": [k if isinstance(k, str) else "" for k in songs["key"]],
         "temp": [clean(t, 1) for t in temp],
         "moon": [None if pd.isna(m) else int(round(m * 100)) for m in moon],

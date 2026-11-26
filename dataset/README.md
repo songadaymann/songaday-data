@@ -23,6 +23,7 @@ edit these files by hand; fix the script and rerun it.
 | `views.csv` | 6,538 | song | `number` | `views.py` | view counts are public YouTube statistics (see caveats); ratings from songaday.fan |
 | `news.csv` | 6,538 | day, 2009-01-01 to 2026-11-25 | `date` | `news.py` | CC BY-SA 4.0 (Wikipedia headline text) |
 | `news_matches.csv` | 6,538 | song | `number` | `news.py` | CC BY-SA 4.0 (Wikipedia headline text) |
+| `mode_estimates.csv` | 429 | song whose mode wasn't written down (#212-#271, #358-#727) | `number` | `modes.py` | computed here from Jonathan's recordings; MIT, like the code |
 
 `songaday.csv` leaves out four long text columns that stay in their own files: songs.csv's
 `generated_summary` (a machine-written summary of the lyrics for #1-#4748, not Jonathan's
@@ -281,6 +282,13 @@ believing a pattern.
   only from #4749 on. A blank means "not tagged", not "none".
 - `mode` is unknown for 443 songs. 429 of them fall in the runs #212-#271 and #358-#727, where
   the sheet wrote only the root, so a minor key looks major. Don't count those as major.
+- `mode_estimates.csv` guesses major or minor for those 429 from the recordings (Bandcamp's
+  streams), knowing the root from the sheet: `mode_estimated` is major, minor or blank, `votes`
+  is what each of four methods answered, `note` says why a song is blank. 305 have an estimate
+  (49 minor). Tested on 299 songs from 2009 and 2011 whose mode was written down, 98% of the
+  major estimates and 95% of the minor ones were right, but minor songs were left blank more
+  often (45% against 20%), so the estimates undercount minor keys. They are not merged into
+  `mode`, and no test in `analysis/` uses them. How it works: `sources/modes.py`.
 - Only the 40 YouTube IDs the sources disagreed on were checked live. Some video titles carry
   an off-by-one song number.
 

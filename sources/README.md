@@ -46,6 +46,22 @@ switch; they only go online for something not yet cached (a new Location string,
 eclipse pages). A step with no cache at all downloads what it needs. `run_all.py` stops at
 the first step that fails and exits with its code.
 
+## Estimated modes (an extra step)
+
+`modes.py` isn't in `run_all.py`: it needs Essentia, which is large and isn't in
+`pyproject.toml`, and it downloads about 1.5 GB of audio on a cold cache. It reads
+`dataset/songaday.csv` and `dataset/bandcamp.csv` and writes `dataset/mode_estimates.csv`,
+major or minor for the 429 songs whose sheet entry gives only the root. `merge.py` doesn't
+read it. The method and its accuracy are in the script's docstring.
+
+```bash
+uv run --no-project --with essentia --with requests python sources/modes.py           # cache only
+uv run --no-project --with essentia --with requests python sources/modes.py --fetch   # download missing audio (one request a second)
+uv run --no-project --with essentia --with requests python sources/modes.py --check   # also score it on songs whose mode is known
+```
+
+Audio is cached in `cache/modes/audio/`, measurements in `cache/modes/measured.json`.
+
 ## Each script on its own
 
 ```bash
